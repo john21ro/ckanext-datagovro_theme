@@ -1,18 +1,12 @@
 =============
-ckanext-romania_theme
+ckanext-romania_theme v2
 =============
 
 .. image:: https://travis-ci.org/govro/ckanext-romania_theme.svg?branch=master
     :target: https://travis-ci.org/govro/ckanext-romania_theme
 
-This extensions includes custom modifications that have been made to
-http://data.gov.ro/ to support our own use cases.
-
-------------
-Requirements
-------------
-
-Built for http://github.com/datagovro/ckan version.
+This extensions includes the custom theme plugin used by 
+http://data.gov.ro/ .
 
 
 ------------
@@ -29,7 +23,9 @@ To install ckanext-romania_theme:
 
      . /usr/lib/ckan/default/bin/activate
 
-2. Clone and install the ckanext-romania_theme Python package into your virtual environment::
+2. Clone ckanext-romania_theme repo and cd into directory
+
+3. Install the ckanext-romania_theme Python package into your virtual environment::
 
      python setup.py develop
 
@@ -47,7 +43,7 @@ Config Settings
 ---------------
 
 ```
-romania_theme.custom_resource_download_url = http://data.gv.ro
+romania_theme.custom_resource_download_url = http://data.gov.ro
 romania_theme.google_analytics_token_path = /etc/ckan/default/google-analytics-secrets.json
 ```
 
