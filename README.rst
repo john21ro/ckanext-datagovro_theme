@@ -2,8 +2,8 @@
 ckanext-romania_theme v2
 =============
 
-.. image:: https://travis-ci.org/govro/ckanext-romania_theme.svg?branch=master
-    :target: https://travis-ci.org/govro/ckanext-romania_theme
+.. image:: https://travis-ci.org/john21ro/ckanext-romania_theme.svg?branch=master
+    :target: https://travis-ci.org/john21ro/ckanext-romania_theme
 
 This extensions includes the custom theme plugin used by 
 http://data.gov.ro/ .
