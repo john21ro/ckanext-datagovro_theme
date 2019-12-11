@@ -1,0 +1,17 @@
+.homepage .stats {
+  text-align: center;
+}
+
+.homepage .stats .width-50 {
+  width: 50%;
+}
+
+.homepage .stats .width-33 {
+  width: 33%;
+}
+
+/* For cookie consent */
+.masthead .site-search input {
+  width: 150px !important;
+}
+
