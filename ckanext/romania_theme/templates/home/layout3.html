@@ -1,5 +1,5 @@
 
-<section class="padding-xlg" style="background-image: url('assets/images/demo/wall.jpg');">
+<section class="padding-xlg" style="background-image: url('/assets/images/gov/wall.jpg');">
     <div class="container">
 
         <header class="text-center margin-bottom-40">
@@ -53,6 +53,77 @@
         </h6>
 
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                    <a class="box-icon-title" href="#">
+                        <i class="fa fa-tablet"></i>
+                        <h2>Tehnologie</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                    <a class="box-icon-title" href="#">
+                        <i class="fa fa-random"></i>
+                        <h2>Transport</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                    <a class="box-icon-title" href="#">
+                        <i class="fa fa-tint"></i>
+                        <h2>Educatie</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                    <a class="box-icon-title" href="#">
+                        <i class="fa fa-cogs"></i>
+                        <h2>Industrie</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                    <a class="box-icon-title" href="#">
+                        <i class="fa fa-tablet"></i>
+                        <h2>Tehnologie</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                    <a class="box-icon-title" href="#">
+                        <i class="fa fa-random"></i>
+                        <h2>Transport</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                    <a class="box-icon-title" href="#">
+                        <i class="fa fa-tint"></i>
+                        <h2>Educatie</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                    <a class="box-icon-title" href="#">
+                        <i class="fa fa-cogs"></i>
+                        <h2>Industrie</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
 </section>
 
 <!-- /INFO BAR -->
@@ -87,26 +158,26 @@
     </div>
 </section>
 
-<div role="main" class="hero">
+<section class="alternate">
     <div class="container">
-        <div class="row row2">
-        <div class="span6 col2">
-            {% block promoted %}
-            {% snippet 'home/snippets/promoted.html' %}
-            {% endblock %}
-        </div>
-        <div class="span6 col1">
-            {% block stats %}
-            {% snippet 'home/snippets/stats.html' %}
-            {% endblock %}
-        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                {% block promoted %}
+                {% snippet 'home/snippets/promoted.html' %}
+                {% endblock %}
+            </div>
+            <div class="col-md-6 col-sm-6">
+                {% block stats %}
+                {% snippet 'home/snippets/stats.html' %}
+                {% endblock %}
+            </div>
         </div>
     </div>
-</div>
-<div role="main">
+</section>
+<section>
     <div class="container">
         {% block search %}
         {% snippet 'home/snippets/search.html' %}
         {% endblock %}
     </div>
-</div>
+</section>
