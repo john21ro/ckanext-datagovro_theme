@@ -54,8 +54,10 @@
 <!-- TAGS -->
 <div class="margin-top-10">
     {% for tag in tags %}
-    <a class="tag" href="{% url_for controller='package', action='search', tags=tag.name %}">{{ h.truncate(tag.display_name, 22) }}</a>
-    <span class="num">12</span>
+    <a class="tag" href="{% url_for controller='package', action='search', tags=tag.name %}">
+        <span class="txt">{{ h.truncate(tag.display_name, 22) }}</span>
+        <span class="num">12</span>
+    </a>
     {% endfor %}
 </div>
 <!-- /TAGS -->
