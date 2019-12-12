@@ -39,5 +39,72 @@ section {
     position: relative;
     display: inline-block;
 	margin: 0 6px 3px 0;
-	background-color: azure;
+	/* background-color: azure; */
+}
+
+/* Tag Cloud */
+.tag_under_search {
+	position:relative;
+	display:inline-block;
+	margin: 0 6px 3px 0;
+}
+.tag_under_search>span.txt {
+	border: 1px solid #e3e3e3;
+	color: #666;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	padding: 8px 9px;
+	text-transform: uppercase;
+	float:left;
+}
+.tag_under_search>span.num {
+	background: rgba(0,0,0,0.01);
+	border-color: #e3e3e3;
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	font-size: 11px;
+	padding: 8px 9px 8px 11px;
+	color: #aaa;
+	position: relative;
+	margin-left: -1px;
+	float:left;
+}
+.tag_under_search>span.num:before {
+	border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) #C6C6C6;
+	border-style: solid;
+	border-width: 4px;
+	content: "";
+	display: block;
+	left: 0px;
+	position: absolute;
+	top: 12px;
+}
+.tag_under_search>span.num:after {
+	border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) #fff;
+	border-style: solid;
+	border-width: 4px;
+	content: "";
+	display: block;
+	left: -1px;
+	position: absolute;
+	top: 12px;
+}
+
+section.dark .tag_under_search>span.txt {
+	border: 1px solid #666;
+	color: #ccc;
+}
+section.dark .tag_under_search>span.num {
+	background: rgba(0,0,0,0.01);
+	border-color: #666;
+	color: #ccc;
+}
+section.dark  .tag_under_search>span.num:before {
+	border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) #666;
+}
+section.dark  .tag_under_search>span.num:after {
+	border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) #212121;
 }
