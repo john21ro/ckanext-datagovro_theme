@@ -112,7 +112,7 @@
   {# Allows custom attributes to be added to the <body> tag #}
   <body class="smoothscroll enable-animation" {% block bodytag %} data-site-root="{{ h.url_for('/', locale='default', qualified=true) }}"
     data-locale-root="{{ h.url_for('/', qualified=true) }}" {% endblock %}>
-
+    <div id="wrapper">
     {#
     The page block allows you to add content to the page. Most of the time it is
     recommended that you extend one of the page.html templates in order to get
@@ -133,7 +133,7 @@
     circumstances
     #}
     {%- block scripts %}
-    <script type="text/javascript">var plugin_path = '/assets/plugins/';</script>
+    <script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
     <script type="text/javascript" src="/assets/plugins/jquery/jquery-2.2.3.min.js"></script>
     
     <script type="text/javascript" src="/assets/js/scripts.js"></script>
@@ -143,7 +143,8 @@
     {# defined in the config.ini under "ckan.template_footer_end" #}
     {{ g.template_footer_end | safe }}
     {%- endblock %}
-    </body>
+    </div>
+  </body>
 
 </html>
 
