@@ -19,32 +19,6 @@
 {%- block content %}
 {% block maintag %}{% endblock %}
     <div id="content" class="container">
-        {% block main_content %}
-        {% block flash %}
-        <div class="flash-messages">
-            {% block flash_inner %}
-            {% for message in h.flash.pop_messages() | list %}
-            <div class="alert alert-warning fade in {{ message.category }}">
-                {{ h.literal(message) }}
-            </div>
-            {% endfor %}
-            {% endblock %}
-        </div>
-        {% endblock %}
-
-        {% block toolbar %}
-        <div class="toolbar">
-            {% block breadcrumb %}
-            {% if self.breadcrumb_content() | trim %}
-            <ol class="breadcrumb">
-                {% snippet 'snippets/home_breadcrumb_item.html' %}
-                {% block breadcrumb_content %}{% endblock %}
-            </ol>
-            {% endif %}
-            {% endblock %}
-        </div>
-        {% endblock %}
-
         <section class="padding-xlg" style="background-image: url('assets/images/demo/wall.jpg');">
             <div class="container">
         
@@ -101,7 +75,6 @@
             </div>
         </section>
         
-        
         <!-- /INFO BAR -->
         <section class="info-bar info-bar-clean">
             <div class="row countTo-lg text-center">
@@ -133,6 +106,33 @@
         
             </div>
         </section>
+        {% block main_content %}
+        {% block flash %}
+        <div class="flash-messages">
+            {% block flash_inner %}
+            {% for message in h.flash.pop_messages() | list %}
+            <div class="alert alert-warning fade in {{ message.category }}">
+                {{ h.literal(message) }}
+            </div>
+            {% endfor %}
+            {% endblock %}
+        </div>
+        {% endblock %}
+
+        {% block toolbar %}
+        <div class="toolbar">
+            {% block breadcrumb %}
+            {% if self.breadcrumb_content() | trim %}
+            <ol class="breadcrumb">
+                {% snippet 'snippets/home_breadcrumb_item.html' %}
+                {% block breadcrumb_content %}{% endblock %}
+            </ol>
+            {% endif %}
+            {% endblock %}
+        </div>
+        {% endblock %}
+
+        
 
         <div
             class="row wrapper{% block wrapper_class %}{% endblock %}{% if self.secondary()|trim == '' or c.action=='resource_read' %} no-nav{% endif %}">
