@@ -61,65 +61,66 @@
   </div>
 </div>
 {% endblock %}
-<div id="header" class="sticky shadow-after-3 clearfix">
-  {% block header_debug %} {% if g.debug and not g.debug_supress_header %}
-  <div class="debug">Controller : {{ c.controller }}<br />Action : {{ c.action }}</div>
-  {% endif %} {% endblock %}
-  <div class="container">
+    <div id="header" class="sticky shadow-after-3 clearfix">
+    {% block header_debug %} {% if g.debug and not g.debug_supress_header %}
+    <div class="debug">Controller : {{ c.controller }}<br />Action : {{ c.action }}</div>
+    {% endif %} {% endblock %}
+    <!-- TOP NAV -->
+    <header id="topNav">
+        <div class="container">
+            <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed"
+            type="button">
+            <span class="fa fa-bars"></span>
+            </button>
 
-
-    <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed"
-      type="button">
-      <span class="fa fa-bars"></span>
-    </button>
-
-    <!-- BUTTONS -->
-    <ul class="pull-right nav nav-pills nav-second-main">
-    
-        <!-- SEARCH -->
-        {% block header_site_search %}
-        <li class="search">
-            <a href="javascript:;">
-                <i class="fa fa-search"></i>
-            </a>
-            <div class="search-box">
-                    <form action="{% url_for controller='package', action='search' %}" method="get">
-                    <div class="input-group">
-                        <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="{{ _('Search') }}" />
-                        <span class="input-group-btn">
-                            <button class="btn btn-primary" type="submit">Cauta</button>
-                        </span>
+            <!-- BUTTONS -->
+            <ul class="pull-right nav nav-pills nav-second-main">
+            
+                <!-- SEARCH -->
+                {% block header_site_search %}
+                <li class="search">
+                    <a href="javascript:;">
+                        <i class="fa fa-search"></i>
+                    </a>
+                    <div class="search-box">
+                            <form action="{% url_for controller='package', action='search' %}" method="get">
+                            <div class="input-group">
+                                <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="{{ _('Search') }}" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit">Cauta</button>
+                                </span>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </li>
+                {% endblock %}
+            
+            </ul>
+            <!-- /BUTTONS -->
+            <!-- Logo -->
+            <a class="logo pull-left" href="{{ h.url_for('home.index') }}">
+            <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="" />
+            <!-- <img src="/assets/images/gov/gov3.png" alt="" /> -->
+            </a>
+
+            <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
+            {% block header_site_navigation %}
+            <nav class="nav-main">
+                <ul class="id="topMain" class="nav nav-pills nav-main"">
+                {{ h.build_nav_main(
+                    ('search', _('Datasets')),
+                    ('organizations_index', _('Organizations')),
+                    ('group_index', _('Groups')),
+                    ) }}
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/showcase">{{ _('Showcase') }}</a></li>
+                <li><a id="sidepanel_btn" href="#" class="fa fa-bars"></a></li>
+                </ul>
+            </nav>
+            {% endblock %} 
+
             </div>
-        </li>
-        {% endblock %}
-    
-    </ul>
-    <!-- /BUTTONS -->
-    <!-- Logo -->
-    <a class="logo pull-left" href="{{ h.url_for('home.index') }}">
-      <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="" />
-      <!-- <img src="/assets/images/gov/gov3.png" alt="" /> -->
-    </a>
-
-    <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
-      {% block header_site_navigation %}
-      <nav class="nav-main">
-        <ul class="id="topMain" class="nav nav-pills nav-main"">
-          {{ h.build_nav_main(
-              ('search', _('Datasets')),
-              ('organizations_index', _('Organizations')),
-              ('group_index', _('Groups')),
-            ) }}
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/showcase">{{ _('Showcase') }}</a></li>
-          <li><a id="sidepanel_btn" href="#" class="fa fa-bars"></a></li>
-        </ul>
-      </nav>
-      {% endblock %} 
-
-    </div>
-  </div>
+        </div>
+    </header>
 </div>
 {% endblock %}
