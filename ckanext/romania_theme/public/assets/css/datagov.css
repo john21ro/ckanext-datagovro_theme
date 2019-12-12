@@ -1,0 +1,43 @@
+/** ************************************* **
+	@Author			Ionel David
+	@Website		data.gov.ro
+	@Last Update	Friday, December 13, 2019
+
+	~ ~ ~ UPDATE REASONS ~ ~ ~
+	REWRITE RULES IN THIS CUSTOM CSS FILE!
+	~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~	
+
+ ** ************************************* **/
+ 
+
+/* .box-inner-right {
+	padding:0px;
+}
+
+.box-footer-right {
+	padding:8px 0px;
+}
+
+.content-center {
+	margin: 0 0 5px 0;
+}
+
+p.p-center { 
+	margin-bottom: 10px; 
+}
+
+hr.hr-center {
+    margin-top: 0px; 
+    margin-bottom: 20px;
+}
+
+section {
+	padding: 40px 0;
+} */
+
+.tag_under_search {
+    position: relative;
+    display: inline-block;
+	margin: 0 6px 3px 0;
+	background-color: azure;
+}
