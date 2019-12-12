@@ -1,6 +1,10 @@
-{% set tags = h.get_facet_items_dict('tags', limit=3) %}
+{% set tags = h.get_facet_items_dict('tags', limit=5) %}
 {% set placeholder = _('E.g. environment') %}
 
+<header class="text-center margin-bottom-40">
+    <h1 class="weight-300" style="color:#f5f5f5">Start cautare in DATA.GOV.RO</h1>
+    <h2 class="weight-300 letter-spacing-1 size-13"><span>CAUTA IN PESTE 1600 SETURI DE DATE</span></h2>
+</header>
 
 <form class="clearfix well well-sm search-big nomargin" method="get" action="{% url_for controller='package', action='search' %}">
     <!-- <h3 class="heading">{{ _("Search data") }}</h3> -->
@@ -46,14 +50,19 @@
             </button>
         </div>
     </div>
-
-
 </form>
-
-<div class="tags">
-    <h3>{{ _('Popular tags') }}</h3>
+<!-- TAGS -->
+<div class="margin-top-10">
     {% for tag in tags %}
     <a class="tag" href="{% url_for controller='package', action='search', tags=tag.name %}">{{ h.truncate(tag.display_name, 22) }}</a>
+    <span class="num">12</span>
     {% endfor %}
 </div>
+<!-- /TAGS -->
+
+    <!-- <a class="tag" href="#">
+        <span class="txt">2017</span>
+        <span class="num">12</span>
+    </a> -->
+
 
