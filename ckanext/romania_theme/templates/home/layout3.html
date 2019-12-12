@@ -1,4 +1,4 @@
-
+{% set stats = h.get_site_statistics() %}
 <section class="padding-xlg" style="background-image: url('/assets/images/gov/wall.jpg');">
     <div class="container">
 
@@ -53,77 +53,7 @@
         </h6>
 
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                    <a class="box-icon-title" href="#">
-                        <i class="fa fa-tablet"></i>
-                        <h2>Tehnologie</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                    <a class="box-icon-title" href="#">
-                        <i class="fa fa-random"></i>
-                        <h2>Transport</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                    <a class="box-icon-title" href="#">
-                        <i class="fa fa-tint"></i>
-                        <h2>Educatie</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                    <a class="box-icon-title" href="#">
-                        <i class="fa fa-cogs"></i>
-                        <h2>Industrie</h2>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                    <a class="box-icon-title" href="#">
-                        <i class="fa fa-tablet"></i>
-                        <h2>Tehnologie</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                    <a class="box-icon-title" href="#">
-                        <i class="fa fa-random"></i>
-                        <h2>Transport</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                    <a class="box-icon-title" href="#">
-                        <i class="fa fa-tint"></i>
-                        <h2>Educatie</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                    <a class="box-icon-title" href="#">
-                        <i class="fa fa-cogs"></i>
-                        <h2>Industrie</h2>
-                    </a>
-                </div>
-            </div>
-        </div>
     
-    </div>
 </section>
 
 <!-- /INFO BAR -->
@@ -131,27 +61,27 @@
     <div class="row countTo-lg text-center">
 
         <div class="col-xs-6 col-sm-5th">
-            <span class="countTo" data-speed="3000" style="color:#59BA41">1600</span>
+            <span class="countTo" data-speed="3000" style="color:#59BA41">{{ h.SI_number_span(stats.dataset_count) }}</span>
             <h4>SETURI DE DATE</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
-            <span class="countTo" data-speed="3000" style="color:#774F38">56000</span>
+            <span class="countTo" data-speed="3000" style="color:#774F38">{{ h.get_number_of_files() }}</span>
             <h4>FISIERE CORELATE</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
-            <span class="countTo" data-speed="3000" style="color:#C02942">99</span>
+            <span class="countTo" data-speed="3000" style="color:#C02942">{{ h.SI_number_span(stats.organization_count) }}</span>
             <h4>INSTITUTII</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
-            <span class="countTo" data-speed="3000" style="color:#C02942">14</span>
+            <span class="countTo" data-speed="3000" style="color:#C02942">{{ h.SI_number_span(stats.group_count) }}</span>
             <h4>GRUPURI</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
-            <span class="countTo" data-speed="3000" style="color:#1693A5">9877</span>
+            <span class="countTo" data-speed="3000" style="color:#1693A5">{{ h.get_number_of_external_links() }}</span>
             <h4>ADRESE EXTERNE</h4>
         </div>
 
@@ -160,6 +90,77 @@
 
 <section class="alternate">
     <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-tablet"></i>
+                            <h2>Tehnologie</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-random"></i>
+                            <h2>Transport</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-tint"></i>
+                            <h2>Educatie</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-cogs"></i>
+                            <h2>Industrie</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-tablet"></i>
+                            <h2>Tehnologie</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-random"></i>
+                            <h2>Transport</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-tint"></i>
+                            <h2>Educatie</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-cogs"></i>
+                            <h2>Industrie</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
         <div class="row">
             <div class="col-md-6 col-sm-6">
                 {% block promoted %}
