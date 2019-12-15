@@ -1,82 +1,15 @@
-{% set stats = h.get_site_statistics() %}
+{% block search %}
+{% snippet 'home/snippets/search.html' %}
+{% endblock %}
 
-
-<section class="padding-xlg" style="background-image: url('/assets/images/gov/wall5.jpg');">
-    <div class="container">
-        {% block search %}
-        {% snippet 'home/snippets/search.html' %}
-        {% endblock %}
-    </div>
-</section>
-
-<!-- /INFO BAR -->
-<section class="info-bar info-bar-clean">
-    <div class="row countTo-sm text-center">
-
-        <div class="col-xs-6 col-sm-5th">
-            <span class="countTo" data-speed="3000" style="color:#59BA41">{{ h.SI_number_span(stats.dataset_count) }}</span>
-            <h4>SETURI DE DATE</h4>
-        </div>
-
-        <div class="col-xs-6 col-sm-5th">
-            <span class="countTo" data-speed="3000" style="color:#774F38">{{ h.get_number_of_files() }}</span>
-            <h4>FISIERE CORELATE</h4>
-        </div>
-
-        <div class="col-xs-6 col-sm-5th">
-            <span class="countTo" data-speed="3000" style="color:#C02942">{{ h.SI_number_span(stats.organization_count) }}</span>
-            <h4>INSTITUTII</h4>
-        </div>
-
-        <div class="col-xs-6 col-sm-5th">
-            <span class="countTo" data-speed="3000" style="color:#C02942">{{ h.SI_number_span(stats.group_count) }}</span>
-            <h4>GRUPURI</h4>
-        </div>
-
-        <div class="col-xs-6 col-sm-5th">
-            <span class="countTo" data-speed="3000" style="color:#1693A5">{{ h.get_number_of_external_links() }}</span>
-            <h4>ADRESE EXTERNE</h4>
-        </div>
-
-    </div>
-</section>
+{% block infobar %}
+{% snippet 'home/snippets/infobar.html' %}
+{% endblock %}
 
 {% block groups %}
 {% snippet 'home/snippets/groups.html' %}
 {% endblock %}
 
-
-<!-- ARTICLES -->
-<section class="padding-xs">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="testimonial testimonial-bordered padding-15 text-center">
-                    <img src="assets/images/gov/bannersmall1.png" alt="" />
-                    <hr />
-                    <h5>LITESPEED WEBSERVER</h5>
-                    <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero!</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="testimonial testimonial-bordered padding-15 text-center">
-                    <img src="assets/images/gov/bannersmall2.png" alt="" />
-                    <hr />
-                    <h5>CLOUDLINUX OS</h5>
-                    <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero!</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="testimonial testimonial-bordered padding-15 text-center">
-                    <img src="assets/images/gov/bannersmall3.png" alt="" />
-                    <hr />
-                    <h5>SOFTACULOUS SCRIPTS</h5>
-                    <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero!</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- /ARTICLES -->
+{% block newsfeed %}
+{% snippet 'home/snippets/newsfeed.html' %}
+{% endblock %}
