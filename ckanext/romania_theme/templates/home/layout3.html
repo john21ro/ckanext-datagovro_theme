@@ -1,7 +1,7 @@
 {% set stats = h.get_site_statistics() %}
 
 
-<section class="padding-xlg" style="background-image: url('/assets/images/gov/wall.jpg');">
+<section class="padding-xlg" style="background-image: url('/assets/images/gov/wall5.jpg');">
     <div class="container">
         {% block search %}
         {% snippet 'home/snippets/search.html' %}
@@ -11,7 +11,7 @@
 
 <!-- /INFO BAR -->
 <section class="info-bar info-bar-clean">
-    <div class="row countTo-lg text-center">
+    <div class="row countTo-sm text-center">
 
         <div class="col-xs-6 col-sm-5th">
             <span class="countTo" data-speed="3000" style="color:#59BA41">{{ h.SI_number_span(stats.dataset_count) }}</span>
@@ -41,91 +41,42 @@
     </div>
 </section>
 
-<section class="alternate">
+{% block groups %}
+{% snippet 'home/snippets/groups.html' %}
+{% endblock %}
+
+
+<!-- ARTICLES -->
+<section class="padding-xs">
     <div class="container">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                        <a class="box-icon-title" href="#">
-                            <i class="fa fa-tablet"></i>
-                            <h2>Tehnologie</h2>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                        <a class="box-icon-title" href="#">
-                            <i class="fa fa-random"></i>
-                            <h2>Transport</h2>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                        <a class="box-icon-title" href="#">
-                            <i class="fa fa-tint"></i>
-                            <h2>Educatie</h2>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                        <a class="box-icon-title" href="#">
-                            <i class="fa fa-cogs"></i>
-                            <h2>Industrie</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                        <a class="box-icon-title" href="#">
-                            <i class="fa fa-tablet"></i>
-                            <h2>Tehnologie</h2>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                        <a class="box-icon-title" href="#">
-                            <i class="fa fa-random"></i>
-                            <h2>Transport</h2>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                        <a class="box-icon-title" href="#">
-                            <i class="fa fa-tint"></i>
-                            <h2>Educatie</h2>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
-                        <a class="box-icon-title" href="#">
-                            <i class="fa fa-cogs"></i>
-                            <h2>Industrie</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
+
         <div class="row">
-            <div class="col-md-6 col-sm-6">
-                {% block promoted %}
-                {% snippet 'home/snippets/promoted.html' %}
-                {% endblock %}
+            <div class="col-md-4 col-sm-6">
+                <div class="testimonial testimonial-bordered padding-15 text-center">
+                    <img src="assets/images/gov/bannersmall1.png" alt="" />
+                    <hr />
+                    <h5>LITESPEED WEBSERVER</h5>
+                    <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero!</p>
+                </div>
             </div>
-            <!-- <div class="col-md-6 col-sm-6">
-                {% block stats %}
-                {% snippet 'home/snippets/stats.html' %}
-                {% endblock %}
-            </div> -->
+            <div class="col-md-4 col-sm-6">
+                <div class="testimonial testimonial-bordered padding-15 text-center">
+                    <img src="assets/images/gov/bannersmall2.png" alt="" />
+                    <hr />
+                    <h5>CLOUDLINUX OS</h5>
+                    <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero!</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="testimonial testimonial-bordered padding-15 text-center">
+                    <img src="assets/images/gov/bannersmall3.png" alt="" />
+                    <hr />
+                    <h5>SOFTACULOUS SCRIPTS</h5>
+                    <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero!</p>
+                </div>
+            </div>
         </div>
+
     </div>
 </section>
-
+<!-- /ARTICLES -->
