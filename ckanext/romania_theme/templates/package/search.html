@@ -8,8 +8,7 @@
 {% endblock %}
 
 {% block primary_content %}
-  <section class="module">
-    <div class="module-content">
+
       {% block page_primary_action %}
         {% if h.check_access('package_create') %}
           <div class="page_primary_action">
@@ -37,12 +36,10 @@
       {% block package_search_results_list %}
         {{ h.snippet('snippets/package_list.html', packages=c.page.items) }}
       {% endblock %}
-    </div>
 
     {% block page_pagination %}
       {{ c.page.pager(q=c.q) }}
     {% endblock %}
-  </section>
 
   {% block package_search_results_api %}
   <section class="module">
@@ -70,13 +67,12 @@
 
 
 {% block secondary_content %}
-<div class="filters">
-  <div>
+
     {% for facet in c.facet_titles %}
       {{ h.snippet('snippets/facet_list.html', title=c.facet_titles[facet], name=facet) }}
     {% endfor %}
-  </div>
+
   <a class="close no-text hide-filters"><i class="fa fa-times-circle"></i><span class="text">close</span></a>
-</div>
+
 {% endblock %}
 
