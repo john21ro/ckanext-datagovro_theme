@@ -51,7 +51,7 @@
             </div>
             {% endblock %}
 
-            <div class="col-md-3 col-sm-3 wrapper{% block wrapper_class %}{% endblock %}{% if self.secondary()|trim == '' or c.action=='resource_read' %} no-nav{% endif %}">
+            <div class="col-md-3 col-sm-3">
                 {#
                 The pre_primary block can be used to add content to before the
                 rendering of the main content columns of the page.
@@ -60,9 +60,9 @@
                 {% endblock %}
                 
                 <!-- INLINE SEARCH -->
-                <div class="inline-search clearfix margin-bottom-30">
-                    <form action="" method="get" class="widget_search">
-                        <input type="search" placeholder="Start Searching..." id="s" name="s" class="serch-input">
+                <div class="inline-search clearfix margin-bottom-10">
+                    <form action="." method="get" class="widget_search">
+                        <input type="search" placeholder="Start Searching..." id="f" name="f" class="serch-input">
                         <button type="submit">
                             <i class="fa fa-search"></i>
                         </button>
@@ -74,7 +74,7 @@
 
                 {% block secondary %}
                 <!-- side navigation -->
-                <div class="side-nav margin-bottom-60 margin-top-30">
+                <div class="side-nav margin-bottom-10 margin-top-10">
                     {#
                     The secondary_content block can be used to add content to the
                     sidebar of the page. This is the main block that is likely to be
