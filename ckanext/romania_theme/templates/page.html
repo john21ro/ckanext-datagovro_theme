@@ -53,17 +53,30 @@
             </div>
             {% endblock %}
 
-            <div
-                class="row wrapper{% block wrapper_class %}{% endblock %}{% if self.secondary()|trim == '' or c.action=='resource_read' %} no-nav{% endif %}">
+            <div class="col-md-3 col-sm-3 wrapper{% block wrapper_class %}{% endblock %}{% if self.secondary()|trim == '' or c.action=='resource_read' %} no-nav{% endif %}">
                 {#
                 The pre_primary block can be used to add content to before the
                 rendering of the main content columns of the page.
                 #}
                 {% block pre_primary %}
                 {% endblock %}
+                
+                <!-- INLINE SEARCH -->
+                <div class="inline-search clearfix margin-bottom-30">
+                    <form action="" method="get" class="widget_search">
+                        <input type="search" placeholder="Start Searching..." id="s" name="s" class="serch-input">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <!-- /INLINE SEARCH -->
+                
+                <hr />
 
                 {% block secondary %}
-                <aside class="secondary col-sm-3">
+                <!-- side navigation -->
+                <div class="side-nav margin-bottom-60 margin-top-30">
                     {#
                     The secondary_content block can be used to add content to the
                     sidebar of the page. This is the main block that is likely to be
@@ -77,11 +90,11 @@
                     {% endblock %}
                     #}
                     {% block secondary_content %}{% endblock %}
-                </aside>
+                    </div>
                 {% endblock %}
 
                 {% block primary %}
-                <div class="primary col-sm-9 col-xs-12">
+                <div class="col-md-9 col-sm-9">
                     {#
                     The primary_content block can be used to add content to the page.
                     This is the main block that is likely to be used within a template.
@@ -94,7 +107,7 @@
                     {% endblock %}
                     #}
                     {% block primary_content %}
-                    <article class="module">
+                    <div class="blog-post-item">
                         {% block page_header %}
                         <header class="module-content page-header">
                             {% if self.content_action() | trim %}
@@ -116,7 +129,7 @@
                             {% block primary_content_inner %}
                             {% endblock %}
                         </div>
-                    </article>
+                    </div>
                     {% endblock %}
                 </div>
                 {% endblock %}
