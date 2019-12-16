@@ -2,16 +2,13 @@
     <div class="container">
         {% block footer_content %}
         <div class="row">
-            <div class="col-md-8 footer-links">
+            <div class="col-md-8">
                 {% block footer_nav %}
-                <ul class="list-unstyled">
+
+                <ul class="footer-links list-unstyled">
                     {% block footer_links %}
-                    <li><a
-                            href="{{ h.url_for(controller='home', action='about') }}">{{ _('About {0}').format(g.site_title) }}</a>
-                    </li>
+                    <li><a href="{{ h.url_for(controller='home', action='about') }}">{{ _('About {0}').format(g.site_title) }}</a></li>
                     {% endblock %}
-                </ul>
-                <ul class="list-unstyled">
                     {% block footer_links_ckan %}
                     <li><a href="/termeni.html">{{ _('Terms and conditions') }}</a></li>
                     <li><a href="/cookie.html">{{ _('Cookies') }}</a></li>
@@ -24,7 +21,7 @@
                 </ul>
                 {% endblock %}
             </div>
-            <div class="col-md-4 attribution">
+            <div class="col-md-4">
                 {% block footer_attribution %}
                 <p>{% trans %}<strong>Powered by</strong> <a class="hide-text ckan-footer-logo"
                         href="http://ckan.org">CKAN</a>{% endtrans %}</p>
