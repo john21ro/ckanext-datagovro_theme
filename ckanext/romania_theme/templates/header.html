@@ -108,12 +108,12 @@
             <nav class="nav-main">
                 <ul id="topMain" class="nav nav-pills nav-main">
                     {{ h.build_nav_main(
-                        ('search', _('Datasets')),
-                        ('organizations_index', _('Organizations')),
-                        ('group_index', _('Groups')),
+                        ('search', _('Datasets')|upper),
+                        ('organizations_index', _('Organizations')|upper),
+                        ('group_index', _('Groups')|upper),
                         ) }}
-                    <li><a href="/contact.html">Contact</a></li>
-                    <li><a href="/showcase">{{ _('Showcase') }}</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                    <li><a href="/showcase">{{ _('Showcase')|upper }}</a></li>
                     <li><a id="sidepanel_btn" href="#" class="fa fa-bars"></a></li>
                 </ul>
             </nav>
