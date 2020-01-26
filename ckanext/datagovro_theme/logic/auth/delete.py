@@ -6,7 +6,7 @@ ERROR_STRING = """Nu este permisa stergerea datelor la mai mult de 5 zile dupa
     data incarcarii, deoarece aceste date au intrat in circuitul public."""
 
 
-def romania_theme_package_delete(context, data_dict):
+def datagovro_theme_package_delete(context, data_dict):
     model = context['model']
     package = model.Package.get(data_dict['id'])
 
@@ -15,7 +15,7 @@ def romania_theme_package_delete(context, data_dict):
     return package_delete(context, data_dict)
 
 
-def romania_theme_resource_delete(context, data_dict):
+def datagovro_theme_resource_delete(context, data_dict):
     model = context['model']
     resource = model.Resource.get(data_dict['id'])
 

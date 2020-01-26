@@ -1,0 +1,292 @@
+# Romanian translations for ckanext-datagovro_theme.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the
+# ckanext-datagovro_theme
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-datagovro_theme 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-07-07 12:04+0000\n"
+"PO-Revision-Date: 2016-07-07 15:04+0200\n"
+"Last-Translator: \n"
+"Language-Team: ro <LL@li.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);\n"
+"Generated-By: Babel 0.9.6\n"
+"X-Generator: Poedit 1.7.6\n"
+
+#: ckanext/datagovro_theme/templates/contact.html:5
+#: ckanext/datagovro_theme/templates/cookie.html:5
+#: ckanext/datagovro_theme/templates/termeni.html:3
+msgid "Terms and conditions for the portal"
+msgstr "Termeni și condiții pentru portal"
+
+#: ckanext/datagovro_theme/templates/footer.html:4
+msgid "Terms and conditions"
+msgstr "Termeni și Condiții"
+
+#: ckanext/datagovro_theme/templates/footer.html:5
+msgid "Cookies"
+msgstr "Politică Cookies"
+
+#: ckanext/datagovro_theme/templates/footer.html:8
+msgid "CKAN API"
+msgstr "API CKAN"
+
+#: ckanext/datagovro_theme/templates/footer.html:10
+msgid "Open Knowledge Foundation"
+msgstr "Fundația pentru Cunoaștere Deschisă"
+
+#: ckanext/datagovro_theme/templates/footer.html:11
+msgid "Open Source on Github"
+msgstr "Sursele Libere pe Github"
+
+#: ckanext/datagovro_theme/templates/footer.html:12
+msgid "Statistics"
+msgstr "Statistici"
+
+#: ckanext/datagovro_theme/templates/footer.html:13
+#: ckanext/datagovro_theme/templates/datagovro_theme/ga.html:5
+#: ckanext/datagovro_theme/templates/datagovro_theme/ga.html:8
+#: ckanext/datagovro_theme/templates/datagovro_theme/ga.html:14
+msgid "Traffic Statistics"
+msgstr "Statistici ale traficului"
+
+#: ckanext/datagovro_theme/templates/header.html:4
+msgid "Log in"
+msgstr "Autentificare"
+
+#: ckanext/datagovro_theme/templates/header.html:9
+msgid "Datasets"
+msgstr "Seturi de date"
+
+#: ckanext/datagovro_theme/templates/header.html:10
+msgid "Organizations"
+msgstr "Instituții"
+
+#: ckanext/datagovro_theme/templates/header.html:11
+msgid "Groups"
+msgstr "Grupuri"
+
+#: ckanext/datagovro_theme/templates/header.html:14
+msgid "Showcase"
+msgstr "Aplicații"
+
+#: ckanext/datagovro_theme/templates/admin/config.html:11
+msgid "Disallowed extensions"
+msgstr "Extensii nepermise"
+
+#: ckanext/datagovro_theme/templates/admin/config.html:13
+msgid "Allowed extensions"
+msgstr "Extensii permise"
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:5
+msgid "{0} statistics"
+msgstr "{0} statistici"
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:10
+msgid "dataset"
+msgstr "set de date"
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:10
+msgid "datasets"
+msgstr "seturi de date"
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:16
+msgid "related item"
+msgstr "fișier corelat"
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:16
+msgid "related items"
+msgstr "fișiere corelate"
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:22
+msgid "organization"
+msgstr "instituție"
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:22
+msgid "organizations"
+msgstr "instituţii"
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:28
+msgid "group"
+msgstr "grup"
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:28
+msgid "groups"
+msgstr "grupuri"
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:34
+msgid "link"
+msgstr "adresă de legătură"
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:34
+msgid "external links"
+msgstr "adrese de legătură externe"
+
+#: ckanext/datagovro_theme/templates/package/resource_read.html:7
+msgid "Manage"
+msgstr "Administrează"
+
+#: ckanext/datagovro_theme/templates/package/resource_read.html:13
+msgid "View"
+msgstr "Vizualizează"
+
+#: ckanext/datagovro_theme/templates/package/resource_read.html:15
+msgid "API Endpoint"
+msgstr "Endpoint API"
+
+#: ckanext/datagovro_theme/templates/package/resource_read.html:17
+msgid "Go to resource"
+msgstr "Mergi la resursă"
+
+#: ckanext/datagovro_theme/templates/package/resource_read.html:19
+msgid "Download"
+msgstr "Descarcă"
+
+#: ckanext/datagovro_theme/templates/package/resource_read.html:33
+#: ckanext/datagovro_theme/templates/package/resource_read.html:35
+msgid "URL:"
+msgstr "URL:"
+
+#: ckanext/datagovro_theme/templates/package/resource_read.html:43
+msgid "From the dataset abstract"
+msgstr "Din sumarul descriptiv al setului de date"
+
+#: ckanext/datagovro_theme/templates/package/resource_read.html:45
+#, python-format
+msgid "Source: <a href=\"%(url)s\">%(dataset)s</a>"
+msgstr "Sursa: <a href=\"%(url)s\">%(dataset)s</a>"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:4
+msgid "Title"
+msgstr "Titlu"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:4
+msgid "eg. A descriptive title"
+msgstr "ex. Un titlu descriptiv"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:13
+msgid "URL"
+msgstr "URL"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:13
+msgid "eg. my-dataset"
+msgstr "ex. setul-meu-de-date"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:19
+msgid "Description"
+msgstr "Descriere"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:19
+msgid "eg. Some useful notes about the data"
+msgstr "ex. Câteva note utile despre date"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:24
+msgid "Tags"
+msgstr "Etichete"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:24
+msgid "eg. economy, mental health, government"
+msgstr "ex. economie, sănătate, administrație"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:30
+msgid "License"
+msgstr "Licență"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:40
+msgid ""
+" License definitions and additional information can be found at <a href="
+"\"http://opendefinition.org/licenses/\">opendefinition.org</a> "
+msgstr ""
+" Definițiile despre licențe se pot găsi la <a href=\"http://opendefinition."
+"org/licenses/\">opendefinition.org</a> "
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:69
+msgid "Organization"
+msgstr "Instituție"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:73
+msgid "No organization"
+msgstr "Fără organizație"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:88
+msgid "Visibility"
+msgstr "Vizibilitate"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:91
+msgid "Private"
+msgstr "Privat"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:91
+msgid "Public"
+msgstr "Public"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:107
+msgid "State"
+msgstr "Stare"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:110
+msgid "Active"
+msgstr "Activ"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:111
+msgid "Deleted"
+msgstr "Șters"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:7
+msgid "Version"
+msgstr "Versiune"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:7
+msgid "1.0"
+msgstr "1.0"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:11
+msgid "Author"
+msgstr "Autor"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:11
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:17
+msgid "Joe Bloggs"
+msgstr "Ion Popescu"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:13
+msgid "Author Email"
+msgstr "E-mail autor"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:13
+msgid "joe@example.com"
+msgstr "exemplu@gov.ro"
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:17
+msgid "Maintainer"
+msgstr "Gestionar"
+
+#: ckanext/datagovro_theme/templates/package/snippets/resources_list.html:13
+msgid "Data and Resources"
+msgstr "Date şi resurse"
+
+#: ckanext/datagovro_theme/templates/package/snippets/resources_list.html:55
+#, python-format
+msgid ""
+" <p class=\"empty\">This dataset has no data, <a href=\"%(url)s\">why not "
+"add some?</a></p> "
+msgstr ""
+" <p class=\"empty\">Acest set de date nu are nicio dată încărcată, <a href="
+"\"%(url)s\">vrei să adaugi tu ceva?</a> "
+
+#: ckanext/datagovro_theme/templates/package/snippets/resources_list.html:59
+msgid "This dataset has no data"
+msgstr "Acest set de date nu are descrierea specificată"
+
+#: ckanext/datagovro_theme/templates/snippets/license.html:8
+msgid "No License Provided"
+msgstr "Nicio licență oferită"

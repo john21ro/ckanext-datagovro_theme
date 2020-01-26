@@ -14,7 +14,7 @@ class TestRomaniaTheme(helpers.FunctionalTestBase):
     @classmethod
     def setup_class(cls):
         cls.app = paste.fixture.TestApp(pylons.test.pylonsapp)
-        ckan.plugins.load('romania_theme')
+        ckan.plugins.load('datagovro_theme')
 
     def setup(self):
         super(TestRomaniaTheme, self).setup()
@@ -26,7 +26,7 @@ class TestRomaniaTheme(helpers.FunctionalTestBase):
 
     @classmethod
     def teardown_class(cls):
-        ckan.plugins.unload('romania_theme')
+        ckan.plugins.unload('datagovro_theme')
 
     def test_motto(self):
         response = self.app.get('/')

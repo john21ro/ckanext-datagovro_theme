@@ -10,7 +10,7 @@ class GAController(BaseController):
         # The scope for the OAuth2 request.
         SCOPE = 'https://www.googleapis.com/auth/analytics.readonly'
         # The location of the key file with the key data.
-        KEY_FILEPATH = config.get('romania_theme.google_analytics_token_path')
+        KEY_FILEPATH = config.get('datagovro_theme.google_analytics_token_path')
 
         vars = {'token': ''}
         
@@ -20,4 +20,4 @@ class GAController(BaseController):
             self.logger = logging.getLogger(__name__)
             self.logger.error("there are no google analytics secrets configured")
 
-        return render('romania_theme/ga.html', extra_vars=vars)
+        return render('datagovro_theme/ga.html', extra_vars=vars)

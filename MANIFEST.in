@@ -1,2 +1,2 @@
 include README.rst
-recursive-include ckanext/romania_theme *.html *.json *.js *.less *.css
+recursive-include ckanext/datagovro_theme *.html *.json *.js *.less *.css

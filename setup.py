@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='''ckanext-romania_theme''',
+    name='''ckanext-datagovro_theme''',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
@@ -20,7 +20,7 @@ setup(
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/palcu/ckanext-romania_theme',
+    url='https://github.com/palcu/ckanext-datagovro_theme',
 
     # Author details
     author='''DSOD''',
@@ -78,10 +78,10 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points='''
         [ckan.plugins]
-        romania_theme=ckanext.romania_theme.plugin:Romania_ThemePlugin
+        datagovro_theme=ckanext.datagovro_theme.plugin:datagovro_themePlugin
 
         [paste.paster_command]
-        create_initial_data = ckanext.romania_theme.commands:CreateInitialDataCommand
+        create_initial_data = ckanext.datagovro_theme.commands:CreateInitialDataCommand
 
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
