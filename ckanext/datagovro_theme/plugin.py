@@ -21,7 +21,7 @@ def get_number_of_external_links():
     return model.Session.execute("select count(*) from resource where state = 'active' and url not LIKE '%data.gov.ro%'").first()[0]
 
 
-class Datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
+class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
     plugins.implements(plugins.IResourceController, inherit=True)
