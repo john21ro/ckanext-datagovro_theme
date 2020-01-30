@@ -6,10 +6,16 @@
 {% block maintag %}{% endblock %}
 {% block toolbar %}{% endblock %}
 
+{%- block header %}
+{% include "header_home.html" %}
+{% endblock -%}
+
+{% block styles %}
+{{ super() }}
+
+{% endblock %}
+
 {% block content %}
-
-
-
   <!-- <div class="homepage layout-{{ homepage_style }}"> -->
     <div class="container">
       {{ self.flash() }}
@@ -19,3 +25,7 @@
     {% endblock %}
   <!-- </div> -->
 {% endblock %}
+
+{%- block footer %}
+{% include "footer_home.html" %}
+{% endblock -%}
