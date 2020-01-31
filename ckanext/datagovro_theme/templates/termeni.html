@@ -1,9 +1,14 @@
 {% extends "page.html" %}
 
+{% block styles %}
+{{ super() }}
+<link href="/assets/css/datagovro.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
 {% block subtitle %}{{ _('Terms and conditions for the portal') }}{% endblock %}
 
 {% block primary %}
-      <article class="module">
+    <article class="module">
         <div class="module-content">
             <h1>Termenii și condițiile de utilizare ale portalului</h1>
 
@@ -18,7 +23,7 @@
                 <li>daune de orice fel apărută ca rezultat al folosinței oricărui conținut postat, transmis și procesat sau oricum altfel făcut disponibil prin acest site.</li>
             </ol>
         </div>
-  </article>
+    </article>
 {% endblock %}
 
 {% block secondary %}{% endblock %}

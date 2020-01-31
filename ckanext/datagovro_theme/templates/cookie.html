@@ -1,10 +1,16 @@
 {% extends "page.html" %}
 
+{% block styles %}
+    {{ super() }}
+    <link href="/assets/css/datagovro.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+
 {% block subtitle %}{{ _('Terms and conditions for the portal') }}{% endblock %}
 
 {% block primary %}
-  <article class="module">
-    <div class="module-content">
+    <article class="module">
+        <div class="module-content">
 <div style="text-align:left;padding:20px;">
 
 
@@ -151,9 +157,9 @@ Acest site foloseşte Google Analytics, un serviciu de analiză a utilizării pa
 &nbsp;
 <br>
 De asemenea, Google poate transfera aceste informaţii unor terţi, în situaţia în care legea impune acest lucru sau în cazul în care terţii respectivi prelucrează informaţiile în numele Google. Google nu va asocia adresa dumneavoastră de IP cu nicio altă informaţie pe care o deţine. Puteţi bloca utilizarea fişierelor „cookies” selectând anumite setări pentru browser-ul dumneavoastră. Dacă alegeţi această variantă însă, este posibil să nu puteţi utiliza toate funcţiile acestui site. Folosind acest site, vă daţi automat acordul ca Google să vă prelucreze datele, în modul şi în scopurile menţionate mai sus. Puteți împiedica Google să detecteze un fișier de tip cookie cu activitatea generată de dumneavoastră pe acest site (inclusiv adresa de IP) precum si procesarea acestor informații, prin descărcarea și instalarea următorului plugin http://tools.google.com/dlpage/gaoptout?hl=en
-    </div>
-    </div>
-  </article>
+        </div>
+        </div>
+    </article>
 {% endblock %}
 
 {% block secondary %}{% endblock %}
