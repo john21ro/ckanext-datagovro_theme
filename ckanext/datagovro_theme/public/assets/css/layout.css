@@ -54,7 +54,8 @@ html, body {
 body {
 	color:#666;
 	background-color:#fff;
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
+	/* font-family:'Open Sans',Arial,Helvetica,sans-serif; */
+	font-family: 'Montserrat', 'Titillium Web', sans-serif;
 	-webkit-font-smoothing: antialiased;
 
 	font-size:14px; line-height:1.5;
@@ -6475,7 +6476,7 @@ h1.blog-post-title {
 	}
 .comments small {
 	font-size:12px;
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
+	/* font-family:'Open Sans',Arial,Helvetica,sans-serif; */
 	color:#aaa;
 }
 .comments h4 {

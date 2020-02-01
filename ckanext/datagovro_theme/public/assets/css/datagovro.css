@@ -14,9 +14,9 @@ body {
     background: #FFF;
     /* font-family: 'Museo Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
      */
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Montserrat', 'Titillium Web', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Titillium Web', sans-serif; */
     font-size: 15px;
     font-weight: 100;
 }
@@ -24,6 +24,16 @@ body {
 a {
     color: #0077BE;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', 'Titillium Web', sans-serif;
+}
+
 
 h1 {
     color: #135589;
