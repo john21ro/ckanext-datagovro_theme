@@ -12,7 +12,11 @@
 
 body {
     background: #FFF;
-    font-family: 'Museo Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font-family: 'Museo Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     */
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 15px;
     font-weight: 100;
 }
