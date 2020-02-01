@@ -34,7 +34,8 @@
 
 {% block secondary %}{% endblock %}
 
-{%- block script %}
+{%- block scripts %}
+{{ super() }}
 <script type="text/javascript" src="/assets/plugins/smoothscroll.js"></script>
 {% endblock -%}
     
