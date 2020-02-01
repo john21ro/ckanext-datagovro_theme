@@ -3,10 +3,11 @@
 {% block styles %}
 {{ super() }}
 <link href="/assets/css/datagovro.css" rel="stylesheet" type="text/css" />
+<link href="/assets/css/layout.css" rel="stylesheet" type="text/css" />
 {% endblock %}
 
 {%- block header %}
-{% include "header_new.html" %}
+{% include "header_home.html" %}
 {% endblock -%}
 
 {% block subtitle %}{{ _('Terms and conditions for the portal') }}{% endblock %}
