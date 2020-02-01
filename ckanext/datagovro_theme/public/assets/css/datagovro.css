@@ -127,6 +127,50 @@ h1 {
     padding: 15px;
 }
 
+.btn, .form-control {
+    height: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.page-header .nav-tabs li.active a, .page-header .nav-tabs a:hover {
+    font-weight: bold;
+}
+
+#header li.search .search-box {
+    display: none;
+    right: 0;
+    left: auto;
+    top: 100%;
+    padding: 15px;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 5px 5px rgba(91, 91, 91, 0.2);
+    width: 274px;
+    margin-top: 36px;
+    z-index: 22;
+}
+
 .module-content {
     padding: 15px;
 }
