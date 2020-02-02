@@ -127,10 +127,6 @@ h1 {
     padding: 15px;
 }
 
-.btn, .form-control {
-    height: 40px;
-}
-
 .btn {
     display: inline-block;
     padding: 6px 12px;
@@ -149,7 +145,7 @@ h1 {
     -ms-user-select: none;
     user-select: none;
     background-image: none;
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
     border-radius: 4px;
 }
 
@@ -1255,15 +1251,15 @@ section.dark .btn-default {
 
 
 /* BOOTSTRAP REWRITE */
-.btn,
-.form-control {
-	height:40px;
-}
 .btn-sm,
 .btn-xs,
 .btn-lg,
 .btn-xlg {
-	height:auto;
+    height:auto;
+}
+.btn,
+.form-control {
+    height:40px;
 }
 a.btn {
 	line-height:26px;
