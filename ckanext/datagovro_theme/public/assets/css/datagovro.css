@@ -34,6 +34,10 @@ h6 {
 	font-family: 'Montserrat', 'Titillium Web', sans-serif;
 }
 
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}
 
 h1 {
     color: #135589;
@@ -540,6 +544,17 @@ a.tag:hover {
     border: 1px solid #DDD;
     border-radius: 0;
 }
+
+
+.search-form .search-input-group {
+    margin-bottom: 10px;
+}
+
+.search-form {
+    padding-bottom: 10px;
+}
+
+
 
 .site-footer {
     background: #212121;
