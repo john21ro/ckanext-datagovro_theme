@@ -1150,21 +1150,21 @@
 		}
 
 		// Count To
-        jQuery(".countTo").appear(function(){
-			var _t 					= jQuery(this),
-				_from 				= _t.attr('data-from') 				|| 0,
-				_speed 				= _t.attr('data-speed') 			|| 1300,
-				_refreshInterval 	= _t.attr('data-refreshInterval') 	|| 60;
+        // jQuery(".countTo").appear(function(){
+		// 	var _t 					= jQuery(this),
+		// 		_from 				= _t.attr('data-from') 				|| 0,
+		// 		_speed 				= _t.attr('data-speed') 			|| 1300,
+		// 		_refreshInterval 	= _t.attr('data-refreshInterval') 	|| 60;
 				
 
-            _t.countTo({
-                from: 				parseInt(_from),
-                to: 				_t.html(),
-                speed: 				parseInt(_speed),
-                refreshInterval: 	parseInt(_refreshInterval),
-            });
+        //     _t.countTo({
+        //         from: 				parseInt(_from),
+        //         to: 				_t.html(),
+        //         speed: 				parseInt(_speed),
+        //         refreshInterval: 	parseInt(_refreshInterval),
+        //     });
             
-        });
+        // });
 	}
 
 
