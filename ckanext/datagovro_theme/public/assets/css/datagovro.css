@@ -1331,25 +1331,21 @@ a.btn.btn-xs {
     font-size: 16px;
 }
 
+.rating-star {
+    /* float: left;
+    font-size: 1.5em;
+    padding: 0 5px; */
+    color: RED;
+}
 
+a.rating-star-hover,
+a.rating-star-hover:hover {
+    color: #0e7ec17a;
+    text-decoration: none;
+}
 
-[class^="icon-"], [class*=" icon-"] {
-    display: inline-block;
-    text-align: right;
-    font-size: 14px;
-    line-height: 1;
-    width: 14px;
-    display: inline-block;
-    font-family: font-icons;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: inherit;
-    -webkit-font-smoothing: antialiased;
-    text-align: right;
-    font-size: 14px;
-    line-height: 1;
-    width: 14px;
+a.rating-star:focus,
+a.rating-star:active {
+    text-decoration: none;
+    background-color: #0E7EC1;
 }
