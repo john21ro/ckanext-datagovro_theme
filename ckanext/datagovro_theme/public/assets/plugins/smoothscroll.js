@@ -340,8 +340,8 @@
 				}
 
 				scrollArray(overflowing, -deltaX, -deltaY);
-				// event.preventDefault();
-				event.currentTarget.blur();
+				event.preventDefault();
+				// event.currentTarget.blur();
 			}
 
 			/**
@@ -412,8 +412,8 @@
 				}
 
 				scrollArray(elem, x, y);
-				// event.preventDefault();
-				event.currentTarget.blur()
+				event.preventDefault();
+				// event.currentTarget.blur()
 			}
 
 			/**

@@ -1313,3 +1313,11 @@ a.btn.btn-xs {
 .modal-header .close {
 	margin-top:2px;
 }
+
+.badge {
+    background-color: #0e7ec17a;
+}
+
+.module-heading {
+    font-size: 16px;
+}
