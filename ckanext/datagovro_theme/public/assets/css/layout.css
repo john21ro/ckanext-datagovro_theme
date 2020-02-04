@@ -364,9 +364,9 @@ img.img-responsive {
 
 
 /* cover video */
-.cover-video {
+/* .cover-video {
 
-}
+} */
 
 
 
@@ -770,9 +770,9 @@ body.boxed #wrapper {
 		display:block;
 		text-decoration:none;
 	}
-	#sidepanel ul li a[data-toggle="collapse"] {
+	/* #sidepanel ul li a[data-toggle="collapse"] { */
 		/* font-weight:bold; */
-	}
+	/* } */
 	#sidepanel ul li a[data-toggle="collapse"].collapsed {
 		color:#ddd;
 		font-weight:normal;
@@ -1646,7 +1646,7 @@ section.dark.page-header ul.page-options a {
 	}
 
 	body.menu-vertical #mainMenu .navbar-collapse {
-		background-color:#transparent;
+		background-color:transparent;
 		border-color:transparent;
 	}
 
