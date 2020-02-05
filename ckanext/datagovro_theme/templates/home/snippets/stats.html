@@ -6,7 +6,7 @@
         <ul>
             <li class="width-50">
                 <a href="{{ h.url_for(controller='package', action='search') }}">
-                <b>{{ h.stats.dataset_count }}</b>
+                <b>{{ stats.dataset_count }}</b>
                 {{ _('dataset') if stats.dataset_count == 1 else _('datasets') }}
                 </a>
             </li>
