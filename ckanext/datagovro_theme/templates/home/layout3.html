@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block groups %}
-{% snippet 'home/snippets/groups_new.html' %}
+{% snippet 'home/snippets/groups_new.html, group=c.group_dict %}
 {% endblock %}
 
 {% block newsfeed %}
