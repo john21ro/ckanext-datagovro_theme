@@ -5226,9 +5226,8 @@ msgstr "Aplicații"
 #~ msgid "Search for a Dataset"
 #~ msgstr "Căuta un set de date"
 
-#: ckanext/showcase/templates/header.html:9
-msgid "Search"
-msgstr "Caută"
+#~ msgid "Search..."
+#~ msgstr "Căutare..."
 
 #~ msgid ""
 #~ "Data API is unavailable for this resource as no data has been pushed to "
