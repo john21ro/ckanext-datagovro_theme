@@ -5090,6 +5090,10 @@ msgstr "Nicio aplicație găsită"
 msgid "Showcases"
 msgstr "Aplicații"
 
+
+msgid "My test"
+msgstr "Testul meu"
+
 #~ msgid "Parameter Error"
 #~ msgstr "Eroare de parametru"
 
@@ -6604,7 +6608,6 @@ msgstr "Aplicații"
 #~ msgid "Add users"
 #~ msgstr "Adaugă utilizatori"
 
-#~ msgid "My test"
-#~ msgstr "Testul meu"
+
 
 
