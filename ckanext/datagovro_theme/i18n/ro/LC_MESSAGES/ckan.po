@@ -6603,3 +6603,8 @@ msgstr "Aplicații"
 
 #~ msgid "Add users"
 #~ msgstr "Adaugă utilizatori"
+
+#~ msgid "My test"
+#~ msgstr "Testul meu"
+
+
