@@ -123,7 +123,24 @@
                                 ) }}
                             <!-- <li><a href="/contact.html">CONTACT</a></li> -->
                             <li><a href="/showcase">{{ _('Showcase')|upper }}</a></li>
-                            <li><a id="sidepanel_btn" href="#" class="fa fa-bars"></a></li>
+                            <!-- <li><a id="sidepanel_btn" href="#" class="fa fa-bars"></a></li> -->
+                            <li class="dropdown active">
+                                <a class="dropdown-togglefa fa-bars" href="#">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="pages/resources"><i class="ico-category et-strategy"></i>
+                                    RESOURCES</a></li>
+                                    <li><a href="pages/guide"><i class="fa fa-angle-right"></i> Publishing Guide</a></li>
+                                    <li><a href="pages/reuse"><i class="fa fa-angle-right"></i>Directivă / Re-use</a></li>
+                                    <li><a href="pages/articles"><i class="fa fa-angle-right"></i>Publicații</a></li>
+                                    <li><a href="index-corporate-5.html"><i class="ico-category et-heart"></i> DEZVOLTATORI</a></li>
+                                    <li><a href="/blog"><i class="ico-category et-happy"></i> BLOG/NEWS</a></li>
+                                    <li><a href="/pages/licence"><i class="ico-category et-beaker"></i> LICENCE</a></li>
+                                    <li><a href="/stats"><i class="fa fa-bar-chart"></i> STATISTICS</a></li>
+                                    <li class="list-group-item"><a href="/contact"><i class="ico-category et-map-pin"></i> CONTACT</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     {% endblock %}
