@@ -5091,8 +5091,8 @@ msgid "Showcases"
 msgstr "Aplicații"
 
 
-msgid "My test"
-msgstr "Testul meu"
+#  msgid "My test"
+#  msgstr "Testul meu"
 
 #~ msgid "Parameter Error"
 #~ msgstr "Eroare de parametru"
