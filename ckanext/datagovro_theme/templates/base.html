@@ -9,6 +9,10 @@
     <link href="/assets/css/header-1.css" rel="stylesheet" type="text/css" />
 {% endblock %}
 
+{%- block page %}
+{{ super() }}
+{% snippet 'snippets/sidenav.html' %}
+{% endblock -%}
 
 {%- block scripts %}
 {{ super() }}
