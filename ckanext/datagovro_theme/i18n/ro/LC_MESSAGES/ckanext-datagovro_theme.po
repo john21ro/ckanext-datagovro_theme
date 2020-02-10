@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-romania_theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-02-10 19:20+0000\n"
-"PO-Revision-Date: 2016-07-07 15:04+0200\n"
+"POT-Creation-Date: 2020-01-01 19:20+0000\n"
+"PO-Revision-Date: 2020-01-09 15:04+0200\n"
 "Last-Translator: \n"
 "Language: ro\n"
 "Language-Team: ro <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgstr "Statistici ale traficului"
 
 #: ckanext/datagovro_theme/templates/footer_home.html:9
 msgid "About {0}"
-msgstr ""
+msgstr "Despre {0}"
 
 #: ckanext/datagovro_theme/templates/footer_home.html:16
 msgid "CKAN Association"
@@ -83,7 +83,7 @@ msgstr "Setări Sysadmin"
 
 #: ckanext/datagovro_theme/templates/header.html:13
 msgid "Admin"
-msgstr ""
+msgstr "Administrare"
 
 #: ckanext/datagovro_theme/templates/header.html:18
 msgid "View profile"
@@ -99,7 +99,7 @@ msgstr[2] ""
 
 #: ckanext/datagovro_theme/templates/header.html:29
 msgid "Dashboard"
-msgstr ""
+msgstr "Tablou de Bord"
 
 #: ckanext/datagovro_theme/templates/header.html:35
 msgid "Edit settings"
@@ -243,12 +243,12 @@ msgstr ""
 #: ckanext/datagovro_theme/templates/package/search.html:29
 #: ckanext/datagovro_theme/templates/snippets/search_form.html:4
 msgid "Name Ascending"
-msgstr ""
+msgstr "Denumire Crescător"
 
 #: ckanext/datagovro_theme/templates/package/search.html:30
 #: ckanext/datagovro_theme/templates/snippets/search_form.html:4
 msgid "Name Descending"
-msgstr ""
+msgstr "Denumire Descrescător"
 
 #: ckanext/datagovro_theme/templates/package/search.html:31
 msgid "Last Modified"
@@ -434,7 +434,7 @@ msgstr "Filtrează Rezultatele"
 
 #: ckanext/datagovro_theme/templates/snippets/search_form.html:87
 msgid " <p class=\"extra\">Please try another search.</p> "
-msgstr ""
+msgstr " <p class=\"extra\">încearcă altă căutare.</p> "
 
 #: ckanext/datagovro_theme/templates/snippets/search_form.html:93
 msgid ""
