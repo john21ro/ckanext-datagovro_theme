@@ -8,64 +8,82 @@
         sidepanel-inverse		= By default, sidepanel is placed on right (left for RTL)
                         If you add "sidepanel-inverse", will be placed on left side (right on RTL).
 -->
+
+<!-- • Resurse - Ghid pentru publicare
+• Directivă / Re-use
+• Publicații
+Status: TBD
+
+Si astea vor fi pagini sub butonul de mai multe
+3. Dezvoltatori
+Status: TBD
+
+4. Licență
+Status: TBD
+
+5. Blog/Noutăți
+Status: TBD
+
+6. Sugestii
+Status: TBD
+
+7. Statistici - Rapoarte
+• Link-uri cu problem. Status: TBD -->
+
+
 <div id="sidepanel" class="sidepanel-light">
     <a id="sidepanel_close" href="#"><!-- close -->
-        <i class="glyphicon glyphicon-remove"></i>
+        <!-- <i class="glyphicon glyphicon-remove"></i> -->
+        <i class="fa fa-close"></i>
     </a>
 
     <div class="sidepanel-content">
-        <h2 class="sidepanel-title">Explore Smarty</h2>
+        <h2 class="sidepanel-title">data.gov.ro</h2>
 
         <!-- SIDE NAV -->
         <ul class="list-group">
 
-            <li class="list-group-item">
-                <a href="#">
-                    <i class="ico-category et-heart"></i>  
-                    ABOUT US
-                </a>
-            </li>
             <li class="list-group-item list-toggle"><!-- add "active" to stay open on page load -->
                 <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-1" class="collapsed"> 
                     <i class="ico-dd icon-angle-down"><!-- Drop Down Indicator --></i>
                     <i class="ico-category et-strategy"></i>
-                    PORTFOLIO
+                    RESOURCES
                 </a>
                 <ul id="collapse-1" class="list-unstyled collapse"><!-- add "in" to stay open on page load -->
-                    <li><a href="#"><i class="fa fa-angle-right"></i> 1 COLUMN</a></li>
+                    <li><a href="/pages/guide"><i class="fa fa-angle-right"></i> Publishing Guide</a></li>
                     <li class="active">
                         <span class="badge">New</span>
-                        <a href="#"><i class="fa fa-angle-right"></i> 2 COLUMNS</a>
+                        <a href="/pages/reuse"><i class="fa fa-angle-right"></i> Directivă / Re-use</a>
                     </li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> 3 COLUMNS</a></li>
-                </ul>
-            </li>
-            <li class="list-group-item list-toggle"><!-- add "active" to stay open on page load -->                
-                <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-2" class="collapsed"> 
-                    <i class="ico-dd icon-angle-down"><!-- Drop Down Indicator --></i>
-                    <i class="ico-category et-trophy"></i>
-                    PORTFOLIO
-                </a>
-                <ul id="collapse-2" class="list-unstyled collapse"><!-- add "in" to stay open on page load -->
-                    <li><a href="#"><i class="fa fa-angle-right"></i> SLIDER</a></li>
-                    <li class="active"><a href="#"><i class="fa fa-angle-right"></i> HEADERS</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i> FOOTERS</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Publicații</a></li>
                 </ul>
             </li>
             <li class="list-group-item">
                 <a href="#">
+                    <i class="ico-category et-heart"></i>  
+                    SOFTWARE DEVELOPMENT
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="/blog">
                     <i class="ico-category et-happy"></i>  
-                    BLOG
+                    BLOG/NEWS
                 </a>
             </li>
             <li class="list-group-item">
-                <a href="#">
+                <a href="/pages/licence">
                     <i class="ico-category et-beaker"></i> 
-                    FEATURES
+                    LICENCE
                 </a>
             </li>
             <li class="list-group-item">
-                <a href="#">
+                <a href="/stats">
+                    <i class="ico-category et-beaker"></i> 
+                    STATISICS
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="/contact">
                     <i class="ico-category et-map-pin"></i> 
                     CONTACT
                 </a>
@@ -75,7 +93,7 @@
         <!-- /SIDE NAV -->
 
         <!-- social icons -->
-        <div class="text-center margin-bottom-30">
+        <!-- <div class="text-center margin-bottom-30">
 
             <a href="#" class="social-icon social-icon-sm social-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
                 <i class="icon-facebook"></i>
@@ -97,7 +115,7 @@
                 <i class="icon-rss"></i>
             </a>
 
-        </div>
+        </div> -->
         <!-- /social icons -->
 
     </div>
