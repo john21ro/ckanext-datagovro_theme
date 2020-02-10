@@ -90,7 +90,7 @@ setup(
     message_extractors={
         'ckanext': [
             ('**.py', 'python', None),
-            ('**.js', 'javascript', None),
+            ('**/public/js/**.js', 'javascript', None),
             ('**/templates/**.html', 'ckan', None),
         ],
     }
