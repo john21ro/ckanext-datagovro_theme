@@ -5,27 +5,27 @@
 
         <div class="col-xs-6 col-sm-5th">
             <span class="countTo" data-speed="3000" style="color:#59BA41">{{ stats.dataset_count }}</span>
-            <h4>SETURI DE DATE</h4>
+            <h4>{{ _('Datasets') }}</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
             <span class="countTo" data-speed="3000" style="color:#774F38">{{ h.get_number_of_files() }}</span>
-            <h4>FISIERE CORELATE</h4>
+            <h4>{{ _('Linked Files') }}</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
             <span class="countTo" data-speed="3000" style="color:#C02942">{{ h.SI_number_span(stats.organization_count) }}</span>
-            <h4>INSTITUTII</h4>
+            <h4>{{ _('Organizations') }}</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
             <span class="countTo" data-speed="3000" style="color:#C02942">{{ h.SI_number_span(stats.group_count) }}</span>
-            <h4>GRUPURI</h4>
+            <h4>{{ _('Groups') }}</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
             <span class="countTo" data-speed="3000" style="color:#1693A5">{{ h.get_number_of_external_links() }}</span>
-            <h4>ADRESE EXTERNE</h4>
+            <h4>{{ _('External Links') }}</h4>
         </div>
 
     </div>
