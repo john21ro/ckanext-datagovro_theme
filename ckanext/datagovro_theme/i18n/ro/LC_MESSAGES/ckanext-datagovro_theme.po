@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-romania_theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-01 19:20+0000\n"
+"POT-Creation-Date: 2020-02-11 00:07+0000\n"
 "PO-Revision-Date: 2020-01-09 15:04+0200\n"
 "Last-Translator: \n"
 "Language: ro\n"
@@ -22,6 +22,10 @@ msgstr ""
 "Generated-By: Babel 2.3.4\n"
 
 #: ckanext/datagovro_theme/templates/contact.html:5
+#: ckanext/datagovro_theme/templates/contact.html:8
+msgid "Contact"
+msgstr ""
+
 #: ckanext/datagovro_theme/templates/cookie.html:10
 #: ckanext/datagovro_theme/templates/termeni.html:10
 #: ckanext/datagovro_theme/templates/termeni.html:13
@@ -124,6 +128,7 @@ msgid "Register"
 msgstr "Înregistrare"
 
 #: ckanext/datagovro_theme/templates/header.html:97
+#: ckanext/datagovro_theme/templates/header.html:99
 #: ckanext/datagovro_theme/templates/home/snippets/search.html:21
 msgid "Search"
 msgstr "Caută"
@@ -145,11 +150,6 @@ msgid "Groups"
 msgstr "Grupuri"
 
 #: ckanext/datagovro_theme/templates/header.html:125
-#, fuzzy
-#| msgid "Showcase"
-msgid "Showcases"
-msgstr "Aplicații"
-
 #: ckanext/datagovro_theme/templates/header_old.html:14
 msgid "Showcase"
 msgstr "Aplicații"
@@ -170,6 +170,18 @@ msgstr "Extensii permise"
 msgid "Welcome"
 msgstr ""
 
+#: ckanext/datagovro_theme/templates/home/snippets/groups.html:6
+msgid "OPEN DATASETS PORTAL"
+msgstr "PORTALUL SETURILOR DE DATE DESCHISE"
+
+#: ckanext/datagovro_theme/templates/home/snippets/groups.html:11
+msgid ""
+"Central access point for open data sets delivered by public "
+"administration authorities and institutions, helping the public to find, "
+"download and use the information generated and held by the administrative"
+" structures."
+msgstr "Punct central de acces pentru seturile de date deschise livrate de autoritățile și instituțiile administrației publice, ajutând publicul să găsească, să descarce și să folosească informațiile generate și deținute de structurile administrative."
+
 #: ckanext/datagovro_theme/templates/home/snippets/search.html:3
 msgid "E.g. environment"
 msgstr "Ex. mediu"
@@ -188,9 +200,19 @@ msgstr "Caută date"
 
 #: ckanext/datagovro_theme/templates/home/snippets/search.html:18
 #, fuzzy
-#| msgid "datasets"
 msgid "Search datasets"
 msgstr "seturi de date"
+
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:29
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:33
+msgid "All Domains"
+msgstr "Toate Grupurile"
+
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:51
+#, fuzzy
+#| msgid "Search datasets"
+msgid "Search in all datasets"
+msgstr "Caută în toate seturile de date"
 
 #: ckanext/datagovro_theme/templates/home/snippets/stats.html:5
 msgid "{0} statistics"
@@ -412,7 +434,6 @@ msgstr "Nicio licență oferită"
 
 #: ckanext/datagovro_theme/templates/snippets/search_form.html:3
 #, fuzzy
-#| msgid "datasets"
 msgid "Search datasets..."
 msgstr "seturi de date"
 
@@ -442,4 +463,7 @@ msgid ""
 "searching.</strong> Please try again.</p> "
 msgstr ""
 
+# | msgid "Showcase"
+#~ msgid "Showcases"
+#~ msgstr "Aplicații"
 

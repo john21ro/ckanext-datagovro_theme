@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datagovro_theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-02-10 19:20+0000\n"
+"POT-Creation-Date: 2020-02-10 21:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,7 @@ msgid "Register"
 msgstr ""
 
 #: ckanext/datagovro_theme/templates/header.html:97
-#: ckanext/datagovro_theme/templates/home/snippets/search.html:21
+#: ckanext/datagovro_theme/templates/header.html:99
 msgid "Search"
 msgstr ""
 
@@ -141,9 +141,6 @@ msgid "Groups"
 msgstr ""
 
 #: ckanext/datagovro_theme/templates/header.html:125
-msgid "Showcases"
-msgstr ""
-
 #: ckanext/datagovro_theme/templates/header_old.html:14
 msgid "Showcase"
 msgstr ""
@@ -162,26 +159,6 @@ msgstr ""
 
 #: ckanext/datagovro_theme/templates/home/index.html:4
 msgid "Welcome"
-msgstr ""
-
-#: ckanext/datagovro_theme/templates/home/snippets/search.html:3
-msgid "E.g. environment"
-msgstr ""
-
-#: ckanext/datagovro_theme/templates/home/snippets/search.html:9
-msgid "Start searching in DATA.GOV.RO"
-msgstr ""
-
-#: ckanext/datagovro_theme/templates/home/snippets/search.html:11
-msgid "Search in more than 1600 datasets"
-msgstr ""
-
-#: ckanext/datagovro_theme/templates/home/snippets/search.html:15
-msgid "Search data"
-msgstr ""
-
-#: ckanext/datagovro_theme/templates/home/snippets/search.html:18
-msgid "Search datasets"
 msgstr ""
 
 #: ckanext/datagovro_theme/templates/home/snippets/stats.html:5
