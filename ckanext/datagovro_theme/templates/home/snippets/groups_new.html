@@ -9,7 +9,13 @@ Example:
 
     {% snippet 'snippets/group, group=c.group_dict %}
 
+# Get a list of all the site's groups from CKAN, sorted by number of
+# datasets.
 #}
+
+{% set groups = toolkit.get_action('group_list')(data_dict={'sort': 'package_count desc', 'all_fields': True}) %}
+
+
 {% with truncate=truncate or 0, url=h.url_for(controller='group', action='read', id=group.name) %}
   <section class="module module-narrow module-shallow group">
     <div class="module-content media media-vertical">

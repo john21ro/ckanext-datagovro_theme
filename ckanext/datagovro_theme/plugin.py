@@ -21,6 +21,19 @@ def get_number_of_external_links():
     return model.Session.execute("select count(*) from resource where state = 'active' and url not LIKE '%data.gov.ro%'").first()[0]
 
 
+def most_popular_groups():
+    '''Return a sorted list of the groups with the most datasets.'''
+
+    # Get a list of all the site's groups from CKAN, sorted by number of
+    # datasets.
+    groups = toolkit.get_action('group_list')(
+        data_dict={'sort': 'package_count desc', 'all_fields': True})
+
+    # Truncate the list to the 10 most popular groups only.
+    groups = groups[:10]
+
+    return groups
+
 class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
@@ -46,7 +59,8 @@ class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
 
     def get_helpers(self):
         return {'get_number_of_files': get_number_of_files,
-                'get_number_of_external_links': get_number_of_external_links}
+                'get_number_of_external_links': get_number_of_external_links,
+                'datagovro_theme_most_popular_groups': most_popular_groups}
 
     def update_config_schema(self, schema):
         ignore_missing = toolkit.get_validator('ignore_missing')
