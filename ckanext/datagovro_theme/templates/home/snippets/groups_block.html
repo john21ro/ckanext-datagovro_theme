@@ -15,7 +15,7 @@
                 administrative structures.{% endtrans %}
             </p>
 
-            <div class="nomargin">
+            <!-- <div class="nomargin">
 
                 {% for group in h.datagovro_theme_most_popular_groups() %}
                 <div class="box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
@@ -28,7 +28,7 @@
                 </div>
                 {% endfor %}
 
-            </div>
+            </div> -->
 
         </div>
 
@@ -45,6 +45,20 @@
             </li>
             {% endfor %}
         </ul> -->
+
+        <div class="row text-center">
+            {% for group in h.datagovro_theme_most_popular_groups() %}
+            <div class="col-xs-6 col-sm-6th box-icon box-icon-center box-icon-round box-icon-transparent box-icon-large">
+                <a class="box-icon-title" href="{{ h.url_for(controller='group', action='read', id=group.name) }}">
+                    <img src="/assets/images/gov/icons/{{ group.name }}.png"
+                        onmouseover="this.src='/assets/images/gov/icons/{{ group.name }}-o.png'"
+                        onmouseout="this.src='/assets/images/gov/icons/{{ group.name }}.png'" />
+                    <h2>{{ group.display_name|upper }}</h2>
+                </a>
+            </div>
+            {{ endfor }}
+
+        </div>
 
     </div>
 </section>
