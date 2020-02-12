@@ -5,27 +5,27 @@
 
         <div class="col-xs-6 col-sm-5th">
             <span class="countTo" data-speed="3000" style="color:#59BA41">{{ stats.dataset_count }}</span>
-            <h4>{{ _('Datasets') }}</h4>
+            <h4>{{ _('Datasets')|upper }}</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
             <span class="countTo" data-speed="3000" style="color:#774F38">{{ h.get_number_of_files() }}</span>
-            <h4>{{ _('related items') }}</h4>
+            <h4>{{ _('related items')|upper }}</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
             <span class="countTo" data-speed="3000" style="color:#C02942">{{ h.SI_number_span(stats.organization_count) }}</span>
-            <h4>{{ _('Organizations') }}</h4>
+            <h4>{{ _('Organizations')|upper }}</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
             <span class="countTo" data-speed="3000" style="color:#C02942">{{ h.SI_number_span(stats.group_count) }}</span>
-            <h4>{{ _('Groups') }}</h4>
+            <h4>{{ _('Groups')|upper }}</h4>
         </div>
 
         <div class="col-xs-6 col-sm-5th">
             <span class="countTo" data-speed="3000" style="color:#1693A5">{{ h.get_number_of_external_links() }}</span>
-            <h4>{{ _('external links') }}</h4>
+            <h4>{{ _('external links')|upper }}</h4>
         </div>
 
     </div>
