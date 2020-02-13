@@ -25,8 +25,8 @@
                 <a href="{{ h.url_for(controller='group', action='read', id=group.name) }}">
                     <img src="/assets/images/gov/icons/{{ group.name }}.png"
                         onmouseover="this.src='/assets/images/gov/icons/{{ group.name }}-o.png'"
-                        onmouseout="this.src='/assets/images/gov/icons/{{ group.name }}.png'" width=90 hight=70 />
-                    <span>{{ group.display_name|upper }}</span>
+                        onmouseout="this.src='/assets/images/gov/icons/{{ group.name }}.png'"/>
+                    <h5>{{ group.display_name.split(' ', 1)[0] | upper }}</h5>
                 </a>
             </li>
             {% endfor %}
