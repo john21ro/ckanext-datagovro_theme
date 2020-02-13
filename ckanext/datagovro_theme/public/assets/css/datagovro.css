@@ -1349,3 +1349,9 @@ a.rating-star:active {
     text-decoration: none;
     background-color: #0E7EC1;
 }
+
+/* for Pages and Blog list display */
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
