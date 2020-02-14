@@ -67,9 +67,11 @@
 
 
 {% block secondary_content %}
-
-    {% for facet in c.facet_titles %}
-      <li>{{ facet }}</li>
+    {# default order: organization/groups/tags/res_format/license_id #}
+    {# datagov order: groups/organization/res_format/license_id/tags/ = domeniu / institutie / format / licenta / etichete / (openness) #}
+    {% set my_facets = ['groups', 'organization', 'res_format', 'license_id', 'tags'] %}
+    {% for facet in my_facets %}
+      <!-- <li>{{ facet }}</li> -->
       {{ h.snippet('snippets/facet_list.html', title=c.facet_titles[facet], name=facet) }}
     {% endfor %}
 
