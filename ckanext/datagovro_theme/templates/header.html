@@ -122,10 +122,10 @@
                                 ('organizations_index', _('Organizations')|upper)
                                 ) }}
                             <!-- <li><a href="/contact.html">CONTACT</a></li> -->
-                            <li><a href="/blog">Nouăți</a></li>
+                            <li><a href="{{ h.url_for('blog') }}">{{ _('News')|upper }}</a></li>
                             <li><a href="{{ h.url_for('showcase') }}">{{ _('Showcase')|upper }}</a></li>
                             <!-- <li><a id="sidepanel_btn" href="#" class="fa fa-bars"></a></li> -->
-                            <li><a href="pages/resources"><i class="ico-category et-strategy"></i> RESOURCES</a></li>
+                            <li><a href="{{ h.url_for('pages.resources') }}"><i class="ico-category et-strategy"></i> RESOURCES</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle fa fa-bars" href="#"></a>
                                 <ul class="dropdown-menu">
