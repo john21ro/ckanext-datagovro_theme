@@ -127,12 +127,12 @@
                             <li class="dropdown">
                                 <a class="dropdown-toggle fa fa-bars" href="#"></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="{{ h.url_for('pages.guide') }}"><i class="fa fa-angle-right"></i> Publishing Guide</a></li>
-                                    <li><a href="/pages/reuse"><i class="fa fa-angle-right"></i>Directivă / Re-use</a></li>
-                                    <li><a href="/pages/articles"><i class="fa fa-angle-right"></i>Publicații</a></li>
-                                    <li><a href="/pages/development"><i class="ico-category et-heart"></i> DEZVOLTATORI</a></li>
-                                    <li><a href="{{ h.url_for('pages.license') }}"><i class="ico-category et-beaker"></i> LICENCE</a></li>
-                                    <li><a href="/stats"><i class="fa fa-bar-chart"></i> STATISTICS</a></li>
+                                    <li><a href="{{ h.url_for('pages.guide') }}"><i class="fa fa-angle-right"></i> {{ _('Publishing Guide')|upper }}</a></li>
+                                    <li><a href="/pages/reuse"><i class="fa fa-angle-right"></i>{{ _('Re-use')|upper }}</a></li>
+                                    <li><a href="/pages/articles"><i class="fa fa-angle-right"></i>{{ _('Articles')|upper }}</a></li>
+                                    <li><a href="/pages/development"><i class="ico-category et-heart"></i> {{ _('Developers')|upper }}</a></li>
+                                    <li><a href="{{ h.url_for('pages.license') }}"><i class="ico-category et-beaker"></i> {{ _('License')|upper }}</a></li>
+                                    <li><a href="/stats"><i class="fa fa-bar-chart"></i> {{ _('Statistics')|upper }}</a></li>
                                     <li><a href="/contact"><i class="ico-category et-map-pin"></i> CONTACT</a></li>
                                 </ul>
                             </li>
