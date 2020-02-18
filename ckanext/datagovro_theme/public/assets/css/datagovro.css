@@ -1355,3 +1355,9 @@ a.rating-star:active {
     margin-left: 0px;
     margin-right: 0px;
 } */
+
+
+.price-clean h4 {
+    font-size: 18px;
+    line-height: 20px;
+}

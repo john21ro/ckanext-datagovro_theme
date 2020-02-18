@@ -4003,11 +4003,11 @@ a.btn.btn-xs {
 
 /**	19. Counters & Countdown
 *************************************************** **/
-.countTo-sm,
+/* .countTo-sm,
 .countTo-md,
 .countTo-lg {
 	font-family:'Raleway', 'Open Sans', Arial, Helvetica, sans-serif;
-}
+} */
 .countTo-sm span.countTo {
 	margin-bottom:20px;
 	font-size:25px;
