@@ -1,14 +1,36 @@
+{% set posts = h.get_recent_blog_posts(number=5, exclude=c.page.name) %}
+
 <!-- ARTICLES -->
 <section class="padding-xs">
     <div class="container">
 
         <div class="row">
+            {% for post in posts %}
             <div class="col-md-4 col-sm-6">
                 <div class="testimonial testimonial-bordered padding-15 text-center">
                     <img src="assets/images/gov/bannersmall1.png" alt="" />
                     <hr />
-                    <h5><a
-                            href="http://ogp.gov.ro/noutati/metodologie-de-publicare-a-datelor-deschise-consultare-publica/">Metodologie
+                    <h5>
+                        <a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a>
+                    </h5>
+                    <p>{{ h.markdown_extract(post.content) }}</p>
+                    {% if post.publish_date %}
+                    <small> {{ h.render_datetime(post.publish_date) }} </small>
+                    <br>
+                    <a class="btn btn-small btn-primary more"
+                        href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ _('More') }}</a>
+                    {% endif %}
+                    
+                </div>
+            </div>
+            {% endfor %}
+
+
+            <!-- <div class="col-md-4 col-sm-6">
+                <div class="testimonial testimonial-bordered padding-15 text-center">
+                    <img src="assets/images/gov/bannersmall1.png" alt="" />
+                    <hr />
+                    <h5><a href="http://ogp.gov.ro/noutati/metodologie-de-publicare-a-datelor-deschise-consultare-publica/">Metodologie
                             de
                             publicare a datelor deschise – consultare publică</a>
                     </h5>
@@ -54,7 +76,7 @@
                         oportunitatea unei politici
                         publice în domeniu. Evenimentul va […]</p>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div class="col-md-4 col-sm-6">
 			                <div class="testimonial testimonial-bordered padding-15 text-center">
