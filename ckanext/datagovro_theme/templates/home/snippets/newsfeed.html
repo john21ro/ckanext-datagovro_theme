@@ -19,8 +19,7 @@
                     <br>
                     <a class="btn btn-small btn-primary more"
                         href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ _('More') }}</a>
-                    {% endif %}
-                    
+                    {% endif %}                    
                 </div>
             </div>
             {% endfor %}
