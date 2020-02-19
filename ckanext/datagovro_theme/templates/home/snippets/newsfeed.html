@@ -9,7 +9,6 @@
 <!-- ARTICLES -->
 <section class="padding-xs">
     <div class="container">
-
         <div class="row">
             {% for post in posts %}
             <div class="col-sm-6 col-md-3">
@@ -22,19 +21,12 @@
                         {% endif %}
                     </a>
                     <h4 class="text-left margin-top-20"><a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a></h4>
-                    <p class="text-left">{{ h.markdown_extract(post.content) }}</p>
-                    
+                    <p class="text-left">{{ h.markdown_extract(post.content) }}</p>                    
                     {% if post.publish_date %}
                     <ul class="text-left size-12 list-inline list-separator">
                         <li>
                             <i class="fa fa-calendar"></i>
                             {{ h.render_datetime(post.publish_date) }}
-                        </li>
-                        <li>
-                            <a href="blog-single-default.html#comments">
-                                <i class="fa fa-comments"></i>
-                                3
-                            </a>
                         </li>
                     </ul>
                     {% endif %}
