@@ -23,8 +23,8 @@
                         <img class="img-responsive" src="assets/images/gov/bannersmall1.png" alt="" />
                         {% endif %}
                     </a>
-                    <h4 class="text-left margin-top-20"><a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a></h4>
-                    <p class="text-left">{{ h.markdown_extract(post.content) }}</p>                    
+                    <h5 class="text-left margin-top-20"><a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a></h5>
+                    <p class="text-left size-14">{{ h.markdown_extract(post.content) }}</p>
                     {% if post.publish_date %}
                     <ul class="text-left size-12 list-inline list-separator">
                         <li>
