@@ -2829,14 +2829,10 @@ section.dark.page-header ul.page-options a {
     text-transform: none;
     line-height: inherit;
     -webkit-font-smoothing: antialiased;
-    text-align: right;
+    text-align: center;
     font-size: 14px;
     line-height: 1;
     width: 14px;
-}
-
-.social-icon {
-	text-align: center;
 }
 
 
