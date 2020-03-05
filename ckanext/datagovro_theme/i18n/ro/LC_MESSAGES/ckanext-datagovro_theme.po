@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: ckanext-romania_theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-03-05 04:50+0000\n"
-"PO-Revision-Date: 2020-03-05 13:55+0200\n"
+"PO-Revision-Date: 2020-03-05 14:40+0200\n"
 "Last-Translator: \n"
 "Language: ro\n"
 "Language-Team: ro <LL@li.org>\n"
@@ -302,7 +302,7 @@ msgstr "API"
 
 #: ckanext/datagovro_theme/templates/package/search.html:50
 msgid "API Docs"
-msgstr ""
+msgstr "Documentație API"
 
 #: ckanext/datagovro_theme/templates/package/search.html:52
 msgid "full {format} dump"
