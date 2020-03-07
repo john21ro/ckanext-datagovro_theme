@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datagovro_theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-02-11 13:15+0000\n"
+"POT-Creation-Date: 2020-03-05 07:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,28 +129,35 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: ckanext/datagovro_theme/templates/header.html:120
+#: ckanext/datagovro_theme/templates/header.html:121
 #: ckanext/datagovro_theme/templates/header_old.html:9
 #: ckanext/datagovro_theme/templates/home/snippets/infobar.html:8
 #: ckanext/datagovro_theme/templates/package/search.html:4
 msgid "Datasets"
 msgstr ""
 
-#: ckanext/datagovro_theme/templates/header.html:121
+#: ckanext/datagovro_theme/templates/header.html:122
 #: ckanext/datagovro_theme/templates/header_old.html:10
 #: ckanext/datagovro_theme/templates/home/snippets/infobar.html:18
 msgid "Organizations"
 msgstr ""
 
-#: ckanext/datagovro_theme/templates/header.html:122
+#: ckanext/datagovro_theme/templates/header.html:124
+msgid "News"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:126
+#: ckanext/datagovro_theme/templates/header_old.html:14
+msgid "Showcase"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:127
+msgid "Resources"
+msgstr ""
+
 #: ckanext/datagovro_theme/templates/header_old.html:11
 #: ckanext/datagovro_theme/templates/home/snippets/infobar.html:23
 msgid "Groups"
-msgstr ""
-
-#: ckanext/datagovro_theme/templates/header.html:125
-#: ckanext/datagovro_theme/templates/header_old.html:14
-msgid "Showcase"
 msgstr ""
 
 #: ckanext/datagovro_theme/templates/page_home.html:6
@@ -209,6 +216,7 @@ msgid "Search data"
 msgstr ""
 
 #: ckanext/datagovro_theme/templates/home/snippets/search.html:18
+#: ckanext/datagovro_theme/templates/snippets/search_form.html:3
 msgid "Search datasets"
 msgstr ""
 
@@ -425,10 +433,6 @@ msgstr ""
 
 #: ckanext/datagovro_theme/templates/snippets/license.html:8
 msgid "No License Provided"
-msgstr ""
-
-#: ckanext/datagovro_theme/templates/snippets/search_form.html:3
-msgid "Search datasets..."
 msgstr ""
 
 #: ckanext/datagovro_theme/templates/snippets/search_form.html:37
