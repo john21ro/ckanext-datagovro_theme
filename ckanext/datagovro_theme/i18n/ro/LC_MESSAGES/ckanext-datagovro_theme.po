@@ -215,11 +215,11 @@ msgstr "Ex. mediu"
 
 #: ckanext/datagovro_theme/templates/home/snippets/search.html:9
 msgid "Start searching in DATA.GOV.RO"
-msgstr "Start căutare in DATA.GOV.RO"
+msgstr "Start căutare în DATA.GOV.RO"
 
 #: ckanext/datagovro_theme/templates/home/snippets/search.html:11
 msgid "Search in more than 1700 datasets"
-msgstr "Caută in mai mult de 1700 de seturi de date"
+msgstr "Caută în mai mult de 1700 de seturi de date"
 
 #: ckanext/datagovro_theme/templates/home/snippets/search.html:15
 msgid "Search data"
