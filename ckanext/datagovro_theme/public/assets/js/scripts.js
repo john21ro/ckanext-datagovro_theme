@@ -70,13 +70,13 @@
 
 
 		/* --- */
-		if(jQuery("body").hasClass("smoothscroll") && navigator.platform.indexOf('Mac') < 0) {
+		// if(jQuery("body").hasClass("smoothscroll") && navigator.platform.indexOf('Mac') < 0) {
 
-			loadScript(plugin_path + 'smoothscroll.js', function() {
-				jQuery.smoothScroll();
-			});
+		// 	loadScript(plugin_path + 'smoothscroll.js', function() {
+		// 		jQuery.smoothScroll();
+		// 	});
 
-		}
+		// }
 		/* --- */
 	});
 
