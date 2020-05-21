@@ -82,6 +82,7 @@ class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
 
         is_resource_extension_allowed = False
         error_message = ''
+        
         # if (type(resource['upload']) is not unicode):
         #     if allowed_mimetypes:
         #         if resource['upload'].mimetype in allowed_mimetypes:
