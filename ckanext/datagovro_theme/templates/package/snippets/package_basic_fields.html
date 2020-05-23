@@ -117,8 +117,9 @@
   {% endif %}
 
   {% if data.groups %}
+  <hr>
   <div class="control-group">
-    <label class="control-label">Grup</label>
+    <label class="control-label">Grupuri Selectate</label>
   
     <div class="controls">
       {% for group in data.groups %}
@@ -136,19 +137,19 @@
   <div class="control-group control-full">
   
     <label class="control-label" for="field-group"><span title="This field is required"
-        class="control-required">*</span>Add Group</label>
+        class="control-required">*</span>Adauga la un Grup de Seturi de Date</label>
   
     <div class="controls">
       <select id="field-group" name="{{ group_name }}" data-module="autocomplete">
-        <option value="">Please Select</option>
+        <option value="">Selecteaza Grup</option>
         {% for group in h.groups() %}
         <option value="{{ group.id }}">{{ group.title }}</option>
         {% endfor %}
       </select>
       <br />
-      The groups to which the resource relates.
+      Grupul cu care Setul de Date poate fi asociat.
   
     </div>
   </div>
-
+  <hr>
 {% endblock %}
