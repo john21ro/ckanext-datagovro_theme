@@ -33,6 +33,36 @@ def most_popular_groups():
 
     return groups
 
+
+def groups():
+    '''Return the groups sorted by name.'''
+
+    # Get a list of all the site's groups from CKAN, sorted by number of datasets.
+    groups = toolkit.get_action('group_list')(
+        data_dict={'sort': 'name desc', 'all_fields': True})
+
+    # Truncate the list to the 20 most popular groups only.
+    groups = groups[:20]
+
+    return groups
+
+
+def get_group_select_list():
+    result = []
+    user = toolkit.get_action('get_site_user')({'ignore_auth': True}, {})
+    context = {'user': user['name']}
+    groups = logic.get_action('group_list')(context, {})
+
+    for group in groups:
+        result.append({'value': group})
+    return result
+
+
+def group_id():
+    id = request.params.get('grp') or request.params.get('groups__0__id')
+    return id
+
+
 class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
