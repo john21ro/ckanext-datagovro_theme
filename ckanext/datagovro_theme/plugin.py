@@ -2,10 +2,12 @@ from pylons import config
 
 import ckan.lib.helpers as h
 import ckan.model as model
+import ckan.logic as logic
 from ckan.lib.plugins import DefaultTranslation
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 import os
+from ckan.common import json, request, response
 from routes.mapper import SubMapper
 import mimetypes
 
@@ -87,9 +89,14 @@ class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
         toolkit.add_resource('fanstatic', 'datagovro_theme')
 
     def get_helpers(self):
-        return {'get_number_of_files': get_number_of_files,
-                'get_number_of_external_links': get_number_of_external_links,
-                'datagovro_theme_most_popular_groups': most_popular_groups}
+        return {
+            'get_number_of_files': get_number_of_files,
+            'get_number_of_external_links': get_number_of_external_links,
+            'datagovro_theme_most_popular_groups': most_popular_groups,
+            'get_group_select_list': get_group_select_list,
+            'groups': groups,
+            'group_id': group_id
+        }
 
     def update_config_schema(self, schema):
         ignore_missing = toolkit.get_validator('ignore_missing')
