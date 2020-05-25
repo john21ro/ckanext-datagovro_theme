@@ -1671,3 +1671,7 @@ a.social-icon.social-icon-transparent:hover>i {
 h4 {
     margin: 7px 0 14px 0;
 }
+
+.fade {
+    opacity: 1;
+}
