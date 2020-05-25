@@ -120,12 +120,12 @@ class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
         error_message = ''
         if (type(resource['upload']) is not unicode):
             if allowed_mimetypes:
-                if resource['upload'].guess_type in allowed_mimetypes:
+                if resource['upload'].type in allowed_mimetypes:
                     is_resource_extension_allowed = True
                 else:
                     error_message="Doar urmatoarele extensii sunt permise: " + ", ".join(allowed_extensions) + "."
             else:
-                if resource['upload'].guess_type not in disallowed_mimetypes:
+                if resource['upload'].type not in disallowed_mimetypes:
                     is_resource_extension_allowed = True
                 else:
                     error_message= "Urmatoarele extensii sunt nepermise: " + ", ".join(disallowed_extensions) + "."
