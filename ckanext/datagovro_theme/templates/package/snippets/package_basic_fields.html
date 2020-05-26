@@ -36,7 +36,7 @@
     </select>
     {% if error %}<span class="error-block">{{ error }}</span>{% endif %}
     <span class="info-block info-inline">
-      <i class="icon-info-sign"></i>
+      <i class="fa fa-info-circle"></i>
       {% trans %}
         License definitions and additional information can be found
         at <a href="http://opendefinition.org/licenses/">opendefinition.org</a>
@@ -58,11 +58,13 @@
   {% set user_is_sysadmin = h.check_access('sysadmin') %}
   {% set show_organizations_selector = organizations_available %}
   {% set show_visibility_selector = dataset_has_organization or (organizations_available and (user_is_sysadmin or dataset_is_draft)) %}
+  <!-- added the groups -->
+  {% set groups = h.groups() %}
 
   {% if show_organizations_selector and show_visibility_selector %}
     <div data-module="dataset-visibility">
   {% endif %}
-
+  <hr>
   {% if show_organizations_selector %}
     {% set existing_org = data.owner_org or data.group_id %}
     <div class="control-group">
@@ -80,8 +82,9 @@
         </select>
       </div>
     </div>
+  <hr>
   {% endif %}
-
+  
   {% if show_visibility_selector %}
     {% block package_metadata_fields_visibility %}
       <div class="control-group">
@@ -114,4 +117,38 @@
     </div>
   {% endif %}
 
+  <hr>
+  {% if data.groups %}
+  <div class="control-group">
+    <label class="control-label">Grupuri Selectate</label>
+  
+    <div class="controls">
+      {% for group in data.groups %}
+      <label class="checkbox" for="field-group-{{ loop.index0 }}">
+        <input id="field-group-{{ loop.index0 }}" type="checkbox" name="groups__{{ loop.index0 }}__id"
+          value="{{ group.id }}" checked="checked" />
+        {{ group.title }}
+      </label>
+      {% endfor %}
+  
+    </div>
+  </div>
+  {% endif %}
+  {% set group_name = 'groups__%s__id' % data.groups|length %}
+  <div class="control-group control-full">
+  
+    <label class="control-label" for="field-group"><span title="This field is required"
+        class="control-required">*</span>Adauga la un Grup de Seturi de Date</label>
+  
+    <div class="controls">
+      <select id="field-group" name="{{ group_name }}" data-module="autocomplete">
+        <option value="">Selecteaza Grup</option>
+        {% for group in h.groups() %}
+        <option value="{{ group.id }}">{{ group.title }}</option>
+        {% endfor %}
+      </select>
+      <small><i class="fa fa-info-circle"></i> Grupul cu care Setul de Date poate fi asociat.</small>  
+    </div>
+  </div>
+  <hr>
 {% endblock %}
