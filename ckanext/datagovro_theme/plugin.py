@@ -85,7 +85,8 @@ class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
             # now comes the actual validation:
             if 'groups' not in data_dict:
                 errors['groups'] = errors.get('groups', []) + [ _("Required field \'groups\' not set.") ]
-            else if len(data_dict['groups'] < 1):
+            else:
+                if len(data_dict['groups'] < 1):
                     errors['groups'] = errors.get('groups', []) + [ _('\'groups\' property has no value.') ]
             # we should probably also check if the group exists, etc.
 
