@@ -76,7 +76,7 @@ class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
     plugins.implements(plugins.IRoutes, inherit=True)
     plugins.implements(plugins.ITranslation)
 
-
+    # Make groups mandatory. valid for API calls
     def validate(self, context, data_dict, schema, action):
         # first, run the schema-based validation to get that out of the way:
         (data_dict, errors) = toolkit.navl_validate(data_dict, schema, context)
@@ -119,10 +119,12 @@ class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
 
     def update_config_schema(self, schema):
         ignore_missing = toolkit.get_validator('ignore_missing')
+        not_empty = toolkit.get_validator('not_empty')
 
         schema.update({
             'ckanext.datagovro_theme.disallowed_extensions': [ignore_missing, unicode],
             'ckanext.datagovro_theme.allowed_extensions': [ignore_missing, unicode],
+            'groups': [not_empty],
         })
 
         return schema
