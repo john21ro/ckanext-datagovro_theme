@@ -119,8 +119,8 @@
                             <!-- ('group_index', _('Groups')|upper), -->
                             {{ h.build_nav_main(
                                     ('search', _('Datasets')|upper),
-                                    ('organizations_index', _('Organizations')|upper),
-                                    ('datarequests_index', _('Data Requests')|upper + h.get_open_datarequests_badge())
+                                    ('organizations_index', _('Organizations')|upper)
+                                    <!-- ('datarequests_index', _('Data Requests')|upper + h.get_open_datarequests_badge()) -->
                                 ) 
                             }}
                             <li><a href="/{{ h.url_for('blog') }}">{{ _('News')|upper }}</a></li>
