@@ -1,0 +1,548 @@
+# Romanian translations for ckanext-showcase.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the ckanext-showcase
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-showcase 1.0.0b1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2015-09-23 14:49+0100\n"
+"PO-Revision-Date: 2020-06-15 22:22+0300\n"
+"Language: ro\n"
+"Language-Team: ro <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.3.1\n"
+
+#: ckanext/showcase/controller.py:56
+msgid "Unauthorized to create a package"
+msgstr "Nu ești autorizat să creezi pachet"
+
+#: ckanext/showcase/controller.py:71 ckanext/showcase/controller.py:267
+msgid "User not authorized to edit {showcase_id}"
+msgstr "Utilizatorul nu este autorizat să editeze {showcase_id}"
+
+#: ckanext/showcase/controller.py:147 ckanext/showcase/controller.py:184
+#: ckanext/showcase/controller.py:224 ckanext/showcase/controller.py:238
+#: ckanext/showcase/controller.py:274
+msgid "Showcase not found"
+msgstr "Aplicația nu a fost găsită"
+
+#: ckanext/showcase/controller.py:149 ckanext/showcase/controller.py:276
+msgid "Unauthorized to read showcase"
+msgstr "Nu ești autorizat să citești Aplicația"
+
+#: ckanext/showcase/controller.py:171 ckanext/showcase/controller.py:182
+msgid "Unauthorized to delete showcase"
+msgstr "Nu ești autorizat să ștegi Aplicația"
+
+#: ckanext/showcase/controller.py:176
+msgid "Showcase has been deleted."
+msgstr "Aplicația a fost șteasă."
+
+#: ckanext/showcase/controller.py:201 ckanext/showcase/controller.py:210
+msgid "Dataset not found"
+msgstr "Set de date negăsit"
+
+#: ckanext/showcase/controller.py:203
+msgid "Not authorized to see this page"
+msgstr "Nu ești autorizat să vizualizezi această pagină"
+
+#: ckanext/showcase/controller.py:212
+msgid "Unauthorized to read package"
+msgstr "Nu ești autorizat să citești pachetul"
+
+#: ckanext/showcase/controller.py:227 ckanext/showcase/controller.py:329
+msgid "The dataset has been added to the showcase."
+msgid_plural "The datasets have been added to the showcase."
+msgstr[0] "Setul de date a fost adăugat la Aplicație."
+msgstr[1] "Setul de date a fost adăugat la Aplicație."
+msgstr[2] "Seturile de date au fost adăugate la Aplicație."
+
+#: ckanext/showcase/controller.py:241 ckanext/showcase/controller.py:297
+msgid "The dataset has been removed from the showcase."
+msgid_plural "The datasets have been removed from the showcase."
+msgstr[0] "Setul de date a fost șters din Aplicație."
+msgstr[1] "Setul de date a fost șters din Aplicație."
+msgstr[2] "Seturile de date au fost șterse din Aplicație."
+
+#: ckanext/showcase/controller.py:462 ckanext/showcase/templates/header.html:6
+msgid "Organizations"
+msgstr "Instituții"
+
+#: ckanext/showcase/controller.py:463 ckanext/showcase/templates/header.html:7
+#: ckanext/showcase/templates/package/read_base.html:5
+msgid "Groups"
+msgstr "Grupuri"
+
+#: ckanext/showcase/controller.py:464 ckanext/showcase/plugin.py:103
+#: ckanext/showcase/templates/showcase/new_package_form.html:33
+msgid "Tags"
+msgstr "Etichete"
+
+#: ckanext/showcase/controller.py:465
+msgid "Formats"
+msgstr "Formats"
+
+#: ckanext/showcase/controller.py:466
+msgid "Licenses"
+msgstr "Licențe"
+
+#: ckanext/showcase/controller.py:516
+msgid "Parameter '{parameter_name}' is not an integer"
+msgstr "Parametrul '{parameter_name}' nu este de tip Integer"
+
+#: ckanext/showcase/controller.py:531 ckanext/showcase/controller.py:567
+msgid "User not authorized to view page"
+msgstr "Utilizatorul nu este autorizat să vizualizeze pagina"
+
+#: ckanext/showcase/controller.py:540 ckanext/showcase/controller.py:581
+msgid "Unauthorized to perform that action"
+msgstr "Utilizatorul nu este autorizat să execute acțiunea"
+
+#: ckanext/showcase/controller.py:542
+msgid "User '{user_name}' not found."
+msgstr "Utilizatorul '{user_name}' nu a fost găsit."
+
+#: ckanext/showcase/controller.py:547
+msgid "The user is now a Showcase Admin"
+msgstr "Utilizatorul este acum Showcase Admin"
+
+#: ckanext/showcase/controller.py:583
+msgid "The user is not a Showcase Admin"
+msgstr "Utilizatorul nu este Showcase Admin"
+
+#: ckanext/showcase/controller.py:585
+msgid "The user is no longer a Showcase Admin"
+msgstr "Utilizatorul nu m-ai este Showcase Admin"
+
+#: ckanext/showcase/logic/converters.py:24
+#: ckanext/showcase/logic/validators.py:29
+msgid "Not found"
+msgstr "Negăsit"
+
+#: ckanext/showcase/logic/converters.py:24
+#: ckanext/showcase/logic/validators.py:29
+#: ckanext/showcase/templates/package/read_base.html:4
+msgid "Dataset"
+msgstr "Set de Date"
+
+#: ckanext/showcase/templates/header.html:5
+msgid "Datasets"
+msgstr "Seturi de date"
+
+#: ckanext/showcase/templates/header.html:8
+#: ckanext/showcase/templates/package/dataset_showcase_list.html:3
+#: ckanext/showcase/templates/package/read_base.html:7
+#: ckanext/showcase/templates/showcase/edit_base.html:5
+#: ckanext/showcase/templates/showcase/edit_base.html:17
+#: ckanext/showcase/templates/showcase/edit_base.html:21
+#: ckanext/showcase/templates/showcase/read.html:6
+#: ckanext/showcase/templates/showcase/read.html:33
+#: ckanext/showcase/templates/showcase/search.html:4
+#: ckanext/showcase/templates/showcase/search.html:7
+msgid "Showcases"
+msgstr "Aplicații"
+
+#: ckanext/showcase/templates/header.html:9
+msgid "About"
+msgstr "Despre"
+
+#: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:3
+#: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:16
+msgid "Confirm Remove"
+msgstr "Confirmă Ștergerea"
+
+#: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:11
+msgid "Are you sure you want to remove this user as a Showcase Admin - {name}?"
+msgstr ""
+"Are you sure you want to remove this user as a Showcase Admin - {name}?"
+
+#: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:15
+#: ckanext/showcase/templates/showcase/confirm_delete.html:14
+msgid "Cancel"
+msgstr "Anulează"
+
+#: ckanext/showcase/templates/admin/manage_showcase_admins.html:9
+msgid "Manage Showcase Admins"
+msgstr "Administrare Administratori Aplicații"
+
+#: ckanext/showcase/templates/admin/manage_showcase_admins.html:16
+msgid "Add an Existing User"
+msgstr "Adaugă un Utilizator existent"
+
+#: ckanext/showcase/templates/admin/manage_showcase_admins.html:19
+msgid ""
+"To make an existing user a Showcase Admin, search for their username below."
+msgstr ""
+"To make an existing user a Showcase Admin, search for their username below."
+
+#: ckanext/showcase/templates/admin/manage_showcase_admins.html:23
+msgid "Username"
+msgstr "Username"
+
+#: ckanext/showcase/templates/admin/manage_showcase_admins.html:32
+msgid "Add User"
+msgstr "Adaugă Utilizator"
+
+#: ckanext/showcase/templates/admin/manage_showcase_admins.html:38
+msgid "Showcase Admins"
+msgstr "Administratori Aplicații"
+
+#: ckanext/showcase/templates/admin/manage_showcase_admins.html:43
+msgid "User"
+msgstr "Utilizator"
+
+#: ckanext/showcase/templates/admin/manage_showcase_admins.html:51
+msgid "Are you sure you want to remove this user from the Showcase Admin list?"
+msgstr ""
+"Are you sure you want to remove this user from the Showcase Admin list?"
+
+#: ckanext/showcase/templates/admin/manage_showcase_admins.html:53
+#: ckanext/showcase/templates/showcase/snippets/showcase_item.html:46
+msgid "Remove"
+msgstr "Șterge"
+
+#: ckanext/showcase/templates/admin/manage_showcase_admins.html:61
+msgid "There are currently no Showcase Admins."
+msgstr "There are currently no Showcase Admins."
+
+#: ckanext/showcase/templates/admin/manage_showcase_admins.html:69
+msgid ""
+" <p><strong>Showcase Admin:</strong> Can create and remove showcases. Can "
+"add and remove datasets from showcases.</p> "
+msgstr ""
+" <p><strong>Showcase Admin:</strong> Poate edita sau șterge Aplicații. Poate "
+"adăuga sau șterge seturi de date din Aplicații.</p> "
+
+#: ckanext/showcase/templates/home/snippets/stats.html:5
+msgid "{site_title} statistics"
+msgstr "{site_title} statistics"
+
+#: ckanext/showcase/templates/home/snippets/stats.html:10
+msgid "dataset"
+msgid_plural "datasets"
+msgstr[0] "set de date"
+msgstr[1] "set de date"
+msgstr[2] "seturi de date"
+
+#: ckanext/showcase/templates/home/snippets/stats.html:16
+msgid "organization"
+msgid_plural "organizations"
+msgstr[0] "instituție"
+msgstr[1] "instituție"
+msgstr[2] "instituții"
+
+#: ckanext/showcase/templates/home/snippets/stats.html:22
+msgid "group"
+msgid_plural "groups"
+msgstr[0] "grup"
+msgstr[1] "grup"
+msgstr[2] "grupuri"
+
+#: ckanext/showcase/templates/home/snippets/stats.html:28
+msgid "showcase"
+msgid_plural "showcases"
+msgstr[0] "aplicație"
+msgstr[1] "aplicație"
+msgstr[2] "aplicații"
+
+#: ckanext/showcase/templates/package/dataset_showcase_list.html:13
+msgid "Associate this showcase with this dataset"
+msgstr "Asociază această Aplicație cu acest Set de Date"
+
+#: ckanext/showcase/templates/package/dataset_showcase_list.html:13
+msgid "Add to showcase"
+msgstr "Adaugă la Aplicație"
+
+#: ckanext/showcase/templates/package/dataset_showcase_list.html:17
+msgid "Showcases featuring {dataset_name}"
+msgstr "Showcases featuring {dataset_name}"
+
+#: ckanext/showcase/templates/package/dataset_showcase_list.html:22
+msgid "There are no showcases that feature this dataset"
+msgstr "There are no showcases that feature this dataset"
+
+#: ckanext/showcase/templates/package/read_base.html:6
+msgid "Activity Stream"
+msgstr "Flux Activitate"
+
+#: ckanext/showcase/templates/showcase/add_datasets.html:3
+msgid "Showcases - Add datasets"
+msgstr "Aplicații - Adaugă seturi de date"
+
+#: ckanext/showcase/templates/showcase/add_datasets.html:21
+#: ckanext/showcase/templates/showcase/manage_datasets.html:24
+#: ckanext/showcase/templates/showcase/search.html:27
+msgid "Relevance"
+msgstr "Relevanță"
+
+#: ckanext/showcase/templates/showcase/add_datasets.html:22
+#: ckanext/showcase/templates/showcase/manage_datasets.html:25
+#: ckanext/showcase/templates/showcase/search.html:28
+msgid "Name Ascending"
+msgstr "Denumire Crescător"
+
+#: ckanext/showcase/templates/showcase/add_datasets.html:23
+#: ckanext/showcase/templates/showcase/manage_datasets.html:26
+#: ckanext/showcase/templates/showcase/search.html:29
+msgid "Name Descending"
+msgstr "Denumire Descrescător"
+
+#: ckanext/showcase/templates/showcase/add_datasets.html:24
+#: ckanext/showcase/templates/showcase/manage_datasets.html:27
+#: ckanext/showcase/templates/showcase/search.html:30
+msgid "Last Modified"
+msgstr "Ultima modificare"
+
+#: ckanext/showcase/templates/showcase/add_datasets.html:25
+#: ckanext/showcase/templates/showcase/manage_datasets.html:28
+#: ckanext/showcase/templates/showcase/search.html:31
+msgid "Popular"
+msgstr "Popular"
+
+#: ckanext/showcase/templates/showcase/add_datasets.html:31
+#: ckanext/showcase/templates/showcase/manage_datasets.html:36
+msgid "Datasets available to add to this showcase"
+msgstr "Seturi de date disponibile pentru a fi adăugate la această Aplicație"
+
+#: ckanext/showcase/templates/showcase/add_datasets.html:48
+#: ckanext/showcase/templates/showcase/manage_datasets.html:51
+msgid "Add to Showcase"
+msgstr "Adaugă la Aplicație"
+
+#: ckanext/showcase/templates/showcase/add_datasets.html:78
+#: ckanext/showcase/templates/showcase/manage_datasets.html:88
+msgid "No datasets could be found"
+msgstr "No datasets could be found"
+
+#: ckanext/showcase/templates/showcase/confirm_delete.html:3
+#: ckanext/showcase/templates/showcase/confirm_delete.html:15
+msgid "Confirm Delete"
+msgstr "Confirmare Ștergere"
+
+#: ckanext/showcase/templates/showcase/confirm_delete.html:11
+msgid "Are you sure you want to delete showcase - {showcase_name}?"
+msgstr "Are you sure you want to delete showcase - {showcase_name}?"
+
+#: ckanext/showcase/templates/showcase/edit_base.html:19
+msgid "Edit"
+msgstr "Editează"
+
+#: ckanext/showcase/templates/showcase/edit_base.html:22
+#: ckanext/showcase/templates/showcase/new.html:3
+#: ckanext/showcase/templates/showcase/new_package_form.html:63
+msgid "Create Showcase"
+msgstr "Creează Aplicație"
+
+#: ckanext/showcase/templates/showcase/edit_base.html:35
+msgid "View showcase"
+msgstr "Vizualizează Aplicația"
+
+#: ckanext/showcase/templates/showcase/edit_base.html:41
+msgid "Edit showcase"
+msgstr "Editează Aplicația"
+
+#: ckanext/showcase/templates/showcase/edit_base.html:42
+msgid "Manage datasets"
+msgstr "Gestionează Seturile de Date"
+
+#: ckanext/showcase/templates/showcase/manage_datasets.html:3
+msgid "Showcases - Manage datasets"
+msgstr "Showcases - Manage datasets"
+
+#: ckanext/showcase/templates/showcase/manage_datasets.html:96
+msgid "Datasets in this showcase"
+msgstr "Datasets in this showcase"
+
+#: ckanext/showcase/templates/showcase/manage_datasets.html:109
+msgid "Remove from Showcase"
+msgstr "Remove from Showcase"
+
+#: ckanext/showcase/templates/showcase/manage_datasets.html:140
+msgid "This showcase has no datasets associated to it"
+msgstr "This showcase has no datasets associated to it"
+
+#: ckanext/showcase/templates/showcase/new.html:8
+msgid "Create a Showcase"
+msgstr "Creează o Aplicație"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:15
+msgid "Title"
+msgstr "Titlu"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:15
+msgid "eg. A descriptive title"
+msgstr "ex. Un titlu descriptiv"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:24
+msgid "URL"
+msgstr "URL"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:24
+msgid "eg. my-showcase"
+msgstr "ex. aplicația mea"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:28
+msgid "Description"
+msgstr "Descriere"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:28
+msgid "eg. Some useful notes about the data"
+msgstr "ex. Câteva note utile despre date"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:33
+msgid "eg. economy, mental health, government"
+msgstr "ex. economie, sănătate, administrație"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:44
+msgid "External link"
+msgstr "Link extern"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:44
+msgid "http://www.example.com"
+msgstr "http://www.example.com"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:48
+msgid "Submitted By"
+msgstr "Submitted By"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:48
+msgid "Joe Bloggs"
+msgstr "Ion Popescu"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:50
+msgid "Submitter Email"
+msgstr "Submitter Email"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:50
+msgid "joe@example.com"
+msgstr "exemplu@gov.ro"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:58
+msgid "Are you sure you want to delete this showcase?"
+msgstr "Are you sure you want to delete this showcase?"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:59
+msgid "Delete"
+msgstr "Șterge"
+
+#: ckanext/showcase/templates/showcase/new_package_form.html:63
+msgid "Update Showcase"
+msgstr "Actualizează Aplicația"
+
+#: ckanext/showcase/templates/showcase/read.html:46
+msgid "Manage"
+msgstr "Gestionează"
+
+#: ckanext/showcase/templates/showcase/read.html:53
+msgid "Private"
+msgstr "Privat"
+
+#: ckanext/showcase/templates/showcase/read.html:60
+msgid "Draft"
+msgstr "Draft"
+
+#: ckanext/showcase/templates/showcase/read.html:78
+#: ckanext/showcase/templates/showcase/snippets/showcase_info.html:27
+msgid "Launch website"
+msgstr "Lansează website"
+
+#: ckanext/showcase/templates/showcase/search.html:13
+msgid "Add Showcase"
+msgstr "Adaugă Aplicație"
+
+#: ckanext/showcase/templates/showcase/search.html:33
+msgid "Search showcases..."
+msgstr "Caută Aplicații..."
+
+#: ckanext/showcase/templates/showcase/snippets/helper.html:4
+msgid "What are Showcases?"
+msgstr "Ce sunt Aplicațiile?"
+
+#: ckanext/showcase/templates/showcase/snippets/helper.html:8
+msgid ""
+"Datasets have been used to build apps, websites and visualizations. They've "
+"been featured in articles, and written about in news reports and blog posts. "
+"Showcases collect together the best examples of datasets in use, to provide "
+"further insight, ideas, and inspiration."
+msgstr ""
+"Seturile de Date au fost folosite pentru a dezvolta aplicații, site-uri web "
+"sau vizualizări. Au fost utilizate in articole, menționate în știri sau "
+"descrise în bloguri. Aplicațiile strâng împreună cele mai bune exemple de "
+"seturi de date utilzate pentru a furniza o mai bună expunere, idei sau "
+"inspirație pentru utilizări viitoare."
+
+#: ckanext/showcase/templates/showcase/snippets/helper.html:12
+#, python-format
+msgid ""
+"Sysadmins can manage Showcase Admins from the <a href='%(url)s'>Showcase "
+"configuration page</a>."
+msgstr ""
+"Doar rolul Sysadmin poate gestiona Administratorii de Aplicații de la <a "
+"href='%(url)s'>pagina de configurare utilizatori Aplicații</a>."
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_info.html:21
+msgid "Submitted by"
+msgstr "Trimis de"
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_info.html:37
+msgid "Datasets in Showcase"
+msgstr "Seturi de Date în Aplicație"
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_info.html:47
+msgid "There are no Datasets in this Showcase"
+msgstr "There are no Datasets in this Showcase"
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_item.html:30
+msgid "This showcase has no description"
+msgstr "Această Aplicație nu are Descriere"
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_item.html:35
+msgid "{num} Dataset"
+msgid_plural "{num} Datasets"
+msgstr[0] "{num} Dataset"
+msgstr[1] "{num} Set de date"
+msgstr[2] "{num} Seturi de Date"
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_item.html:37
+msgid "0 Datasets"
+msgstr "0 Seturi de Date"
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_item.html:41
+#: ckanext/showcase/templates/showcase/snippets/showcase_item.html:42
+msgid "View {showcase_title}"
+msgstr "Vizualizare {showcase_title}"
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_item.html:46
+msgid "Remove dataset from this showcase"
+msgstr "Șterge set de date din această Aplicație"
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:7
+msgid "{number} showcase found for '{query}'"
+msgid_plural "{number} showcases found for '{query}'"
+msgstr[0] "{number} aplicație găsită pentru '{query}'"
+msgstr[1] "{number} aplicție găsită pentru '{query}'"
+msgstr[2] "{number} aplicții găsite pentru '{query}'"
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:8
+msgid "No showcases found for '{query}'"
+msgstr "Nu au fost găsite Aplicații pentru '{query}'"
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:9
+msgid "{number} showcase found"
+msgid_plural "{number} showcases found"
+msgstr[0] "{number} aplicație găsită"
+msgstr[1] "{number} aplicație găsită"
+msgstr[2] "{number} Aplicații găsite"
+
+#: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:10
+msgid "No showcases found"
+msgstr "Nu au fost găasite Aplicații"
