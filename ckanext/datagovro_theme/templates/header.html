@@ -118,9 +118,11 @@
                         <ul id="topMain" class="nav nav-pills nav-main">
                             <!-- ('group_index', _('Groups')|upper), -->
                             {{ h.build_nav_main(
-                                ('search', _('Datasets')|upper),
-                                ('organizations_index', _('Organizations')|upper)
-                                ) }}
+                                    ('search', _('Datasets')|upper),
+                                    ('organizations_index', _('Organizations')|upper),
+                                    ('datarequests_index', _('Data Requests')|upper + h.get_open_datarequests_badge())
+                                ) 
+                            }}
                             <li><a href="/{{ h.url_for('blog') }}">{{ _('News')|upper }}</a></li>
                             <!-- <li><a href="/{{ h.url_for('blog') }}">Noutăți</a></li> -->
                             <li><a href="/{{ h.url_for('showcase') }}">{{ _('Showcase')|upper }}</a></li>
