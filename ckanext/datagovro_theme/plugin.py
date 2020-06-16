@@ -77,20 +77,20 @@ class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
     plugins.implements(plugins.ITranslation)
 
     # Make groups mandatory. valid for API calls
-    def validate(self, context, data_dict, schema, action):
-        # first, run the schema-based validation to get that out of the way:
-        (data_dict, errors) = toolkit.navl_validate(data_dict, schema, context)
-        # we're only interested if this is a create or update action:
-        if action in [ 'package_create', 'package_update' ]:
-            # now comes the actual validation:
-            if 'groups' not in data_dict:
-                errors['groups'] = errors.get('groups', []) + [ _("Required field \'groups\' not set.") ]
-            else:
-                if len(data_dict['groups'] < 1):
-                    errors['groups'] = errors.get('groups', []) + [ _('\'groups\' property has no value.') ]
-            # we should probably also check if the group exists, etc.
+    # def validate(self, context, data_dict, schema, action):
+    #     # first, run the schema-based validation to get that out of the way:
+    #     (data_dict, errors) = toolkit.navl_validate(data_dict, schema, context)
+    #     # we're only interested if this is a create or update action:
+    #     if action in [ 'package_create', 'package_update' ]:
+    #         # now comes the actual validation:
+    #         if 'groups' not in data_dict:
+    #             errors['groups'] = errors.get('groups', []) + [ _("Required field \'groups\' not set.") ]
+    #         else:
+    #             if len(data_dict['groups'] < 1):
+    #                 errors['groups'] = errors.get('groups', []) + [ _('\'groups\' property has no value.') ]
+    #         # we should probably also check if the group exists, etc.
 
-        return (data_dict, errors)
+    #     return (data_dict, errors)
 
     # IRoutes
     def after_map(self, mapping):
