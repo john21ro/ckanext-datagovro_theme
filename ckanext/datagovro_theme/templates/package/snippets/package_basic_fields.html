@@ -31,7 +31,7 @@
   <div class="controls">
     <select id="field-license" name="license_id" data-module="autocomplete">
       {% for license_desc, license_id in licenses|sort if license_desc  %}
-        <option value="{{ license_id }}" {% if data.get('license_id', 'uk-ogl') == license_id %}selected="selected"{% endif %}>{{ license_desc }}</option>
+        <option value="{{ license_id }}" {% if data.get('license_id', 'CC-BY-4.0') == license_id %}selected="selected"{% endif %}>{{ license_desc }}</option>
       {% endfor %}
     </select>
     {% if error %}<span class="error-block">{{ error }}</span>{% endif %}
@@ -39,7 +39,7 @@
       <i class="fa fa-info-circle"></i>
       {% trans %}
         License definitions and additional information can be found
-        at <a href="http://opendefinition.org/licenses/">opendefinition.org</a>
+        at <a href="https://opendefinition.org/licenses/">opendefinition.org</a>
       {% endtrans %}
     </span>
   </div>
