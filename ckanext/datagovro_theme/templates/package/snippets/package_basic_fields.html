@@ -58,8 +58,9 @@
   {% set user_is_sysadmin = h.check_access('sysadmin') %}
   {% set show_organizations_selector = organizations_available %}
   {% set show_visibility_selector = dataset_has_organization or (organizations_available and (user_is_sysadmin or dataset_is_draft)) %}
+  
   <!-- added the groups -->
-  {% set groups = h.groups() %}
+  <!-- {% set groups = h.groups() %} -->
 
   {% if show_organizations_selector and show_visibility_selector %}
     <div data-module="dataset-visibility">
@@ -118,7 +119,7 @@
   {% endif %}
 
   <hr>
-  {% if data.groups %}
+  <!-- {% if data.groups %}
   <div class="control-group">
     <label class="control-label">Grupuri Selectate</label>
   
@@ -133,8 +134,8 @@
   
     </div>
   </div>
-  {% endif %}
-  {% set group_name = 'groups__%s__id' % data.groups|length %}
+  {% endif %} -->
+  <!-- {% set group_name = 'groups__%s__id' % data.groups|length %}
   <div class="control-group control-full">
   
     <label class="control-label" for="field-group"><span title="This field is required"
@@ -150,5 +151,5 @@
       <small><i class="fa fa-info-circle"></i> Grupul cu care Setul de Date poate fi asociat.</small>  
     </div>
   </div>
-  <hr>
+  <hr> -->
 {% endblock %}
