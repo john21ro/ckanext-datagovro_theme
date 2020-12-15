@@ -1323,6 +1323,10 @@ a.btn.btn-xs {
 	margin-top:2px;
 }
 
+.modal {
+    padding-top: 30px;
+}
+
 .badge {
     background-color: #0e7ec17a;
 }
