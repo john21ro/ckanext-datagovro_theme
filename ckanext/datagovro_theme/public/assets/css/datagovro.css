@@ -1814,3 +1814,35 @@ div.alert.bordered-top p {
 	border-left:0;
 }
 
+/**	HOME - MODAL ON LOAD
+ **************************************************************** **/
+#shopLoadModal {
+	max-width:740px;
+	margin:auto !important;
+	height:400px;
+	margin-right:30px;
+}
+#shopLoadModal .modal-content {
+	height:320px;
+
+	background-color:#fff;
+	background-repeat:no-repeat;
+	background-position: left top;
+
+}
+#shopLoadModal .modal-dialog {
+	left:10px;
+	right:10px;
+	width:auto !important;
+	max-width:700px;
+	margin-right: 30px;
+}
+#shopLoadModal .block-content {
+	float:left;
+	max-width: 312px;
+	text-align: center;
+}
+#shopLoadModal .modal-header .close {
+	margin-top:-5px;
+	font-size:24px;
+}
