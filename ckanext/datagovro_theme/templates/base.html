@@ -11,9 +11,7 @@
 
 {%- block page %}
 {{ super() }}
-{% snippet 'snippets/modal.html' %}
 {% snippet 'snippets/sidenav.html' %}
-{% snippet 'snippets/feedback.html' %}
 {% endblock -%}
 
 {%- block scripts %}
@@ -21,7 +19,4 @@
 <script type="text/javascript">var plugin_path = '/assets/plugins/';</script>
 <script type="text/javascript" src="/assets/plugins/jquery/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="/assets/js/scripts.js"></script>
-<script type="text/javascript">
-    _toastr("Vă mulțumim pentru vizita dvs. pe site-ul nostru. În vederea îmbunătățirii acestuia, dorim să aflăm câteva opinii despre site, printr-un chestionar care durează 5-7 minute. Menționăm că răspunsurile dvs. sunt complet anonime și vor fi utilizate doar pentru statistică.","top-center","info","https://rqsa.ro/lime/index.php/738468?lang=ro");
-</script>
 {% endblock -%}

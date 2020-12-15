@@ -11,4 +11,17 @@
     <li><a href="/datarequest">{{ _('Data Requests') }}</a></li>
     <li><a href="{{ h.url_for('ga_index') }}">{{ _('Traffic Statistics') }}</a></li>
     <li><a href="https://data.gov.ro/feeds/dataset.atom" target="_blank">Feeds</a></li>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/cookiemonster.js"></script>
+    <script src="/cookieconsent.js"></script>
+    <script type="text/javascript">
+        window.cookieconsent_options = {
+            "message": "Test message",
+            "dismiss": "Mergi la Chestionar",
+            "link": "https://data.gov.ro/cookie.html",
+            "theme": "dark-top"
+        };
+    </script>
 {% endblock %}
