@@ -1308,7 +1308,7 @@ a.btn.btn-xs {
 }
 .modal-content {
 	border:0;
-	border-top:#333 4px solid;
+	border-top:#333 1px solid;
 }
 .modal-dialog {
 	-webkit-border-radius: 3px;

@@ -18,36 +18,39 @@
         data-autoload="true" 			- load modal on page load
         data-autoload-delay="2000"		- load after 2000 ms (1000ms = 1s)
     -->
-    <div id="shopLoadModal" class="modal fade" data-autoload="true" data-autoload-delay="2000">
+    <div id="datagovroModal" class="modal fade" data-autoload="true" data-autoload-delay="1000" style="padding-right: 17px;padding-top: 30px;display: block;">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Autoload Modal</h4>
+                    <h4 class="modal-title" id="myModalLabel">Chestionar de satisfacție a utilizării data.gov.ro</h4>
                 </div>
 
                 <!-- body modal -->
                 <div class="modal-body clearfix">
 
                     <p>
-                        This is a modal loaded when page load. You can also set a delay - when this modal shows up, after the page is loaded.
-                    </p>
-                    <p>
-                        Please note, an unique ID is required - localStorage is used.<br />
-                        localStorage use the ID to hide the modal, if user checked "Don't show this popup again".
+                        Vă mulțumim pentru vizita dvs. pe site-ul nostru. În vederea îmbunătățirii acestuia, dorim să aflăm câteva opinii despre site, printr-un chestionar care durează 5-7 minute. Menționăm că răspunsurile dvs. sunt complet anonime și vor fi utilizate doar pentru statistică.
                     </p>
 
                     <!-- Don't show this popup again -->
                     <div class="size-11 text-left">
                         <label class="checkbox pull-left">
                             <input class="loadModalHide" type="checkbox" />
-                            <i></i> <span class="weight-300">Don't show this popup again</span>
+                            <i></i> <span class="weight-300">Nu mai arăta acest popup</span>
                         </label>
 
                     </div>
                     <!-- /Don't show this popup again -->
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        {% comment %} <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> {% endcomment %}
+                        <a href="https://rqsa.ro/lime/index.php/738468?lang=ro" class="btn btn-primary" data-toggle="tooltip" title="Tooltip" target="_blank">Mergi la Chestionar</a>
+                        {% comment %} <button type="button" class="btn btn-primary">Mergi la Chestionar</button> {% endcomment %}
+                    </div>
 
                 </div>
 
