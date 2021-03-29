@@ -124,7 +124,7 @@ class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
         schema.update({
             'ckanext.datagovro_theme.disallowed_extensions': [ignore_missing, unicode],
             'ckanext.datagovro_theme.allowed_extensions': [ignore_missing, unicode],
-            'groups': [not_empty],
+            # 'groups': [not_empty],
         })
 
         return schema
@@ -137,28 +137,28 @@ class datagovro_themePlugin(plugins.SingletonPlugin, DefaultTranslation):
         allowed_extensions = toolkit.aslist(config.get('ckanext.datagovro_theme.allowed_extensions',[]))
         allowed_mimetypes = [mimetypes.types_map["." + x] for x in allowed_extensions]
 
-        # is_resource_extension_allowed = False
-        # error_message = ''
-        # if (type(resource['upload']) is not unicode):
-        #     if allowed_mimetypes:
-        #         if resource['upload'].type in allowed_mimetypes:
-        #             is_resource_extension_allowed = True
-        #         else:
-        #             error_message="Doar urmatoarele extensii sunt permise: " + ", ".join(allowed_extensions) + "."
-        #     else:
-        #         if resource['upload'].type not in disallowed_mimetypes:
-        #             is_resource_extension_allowed = True
-        #         else:
-        #             error_message= "Urmatoarele extensii sunt nepermise: " + ", ".join(disallowed_extensions) + "."
+        is_resource_extension_allowed = False
+        error_message = ''
+        if (type(resource['upload']) is not unicode):
+            if allowed_mimetypes:
+                if resource['upload'].type in allowed_mimetypes:
+                    is_resource_extension_allowed = True
+                else:
+                    error_message="Doar urmatoarele extensii sunt permise: " + ", ".join(allowed_extensions) + "."
+            else:
+                if resource['upload'].type not in disallowed_mimetypes:
+                    is_resource_extension_allowed = True
+                else:
+                    error_message= "Urmatoarele extensii sunt nepermise: " + ", ".join(disallowed_extensions) + "."
 
-        # # is_resource_extension_allowed = True
-        # if ('upload' in resource) and (type(resource['upload']) is not unicode) and not is_resource_extension_allowed:
-        #     # If we did not do this, the URL field would contain the filename
-        #     # and people can press finalize afterwards.
-        #     resource['url'] = ''
+        # is_resource_extension_allowed = True
+        if ('upload' in resource) and (type(resource['upload']) is not unicode) and not is_resource_extension_allowed:
+            # If we did not do this, the URL field would contain the filename
+            # and people can press finalize afterwards.
+            resource['url'] = ''
 
-        #     raise toolkit.ValidationError(['Fisierul are o extensie nepermisa! ' + error_message])
-        is_resource_extension_allowed = True
+            raise toolkit.ValidationError(['Fisierul are o extensie nepermisa! ' + error_message])
+            is_resource_extension_allowed = False
         
 
     def before_show(context, resource_dict):
